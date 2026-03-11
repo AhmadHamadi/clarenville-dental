@@ -1,0 +1,10 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/dental-site/index.html" },
+    { "source": "/css/:path*", "destination": "/dental-site/css/:path*" },
+    { "source": "/js/:path*", "destination": "/dental-site/js/:path*" },
+    { "source": "/components/:path*", "destination": "/dental-site/components/:path*" },
+    { "source": "/pages/:path*", "destination": "/dental-site/pages/:path*" },
+    { "source": "/assets/:path*", "destination": "/dental-site/assets/:path*" }
+  ]
+}
