@@ -1,0 +1,312 @@
+/* =============================================================
+   STYLES.CSS — Base, CSS Variables, Layout, Sections, Grid
+   Hamilton Care Dental
+   ============================================================= */
+
+/* ── Custom Properties ─────────────────────────────────────── */
+:root {
+  /* Brand Colors */
+  --color-primary:        #0f766e;
+  --color-primary-dark:   #0d6360;
+  --color-primary-darker: #0a4f4b;
+  --color-primary-light:  #f0fdfa;
+  --color-primary-border: #99f6e4;
+
+  /* Text */
+  --color-text:           #111827;
+  --color-text-secondary: #374151;
+  --color-text-muted:     #6b7280;
+  --color-text-light:     #9ca3af;
+
+  /* Backgrounds */
+  --color-bg:             #ffffff;
+  --color-bg-subtle:      #f9fafb;
+  --color-bg-muted:       #f3f4f6;
+  --color-bg-teal-wash:   #ecfdf5;
+  --color-bg-slate:       #f1f5f9;
+
+  /* Borders */
+  --color-border:         #e5e7eb;
+  --color-border-strong:  #d1d5db;
+
+  /* Surfaces */
+  --color-dark:           #111827;
+  --color-charcoal:       #1f2937;
+  --color-amber:          #f59e0b;
+
+  /* Teal accent scale (for hover states, icon accents, footer) */
+  --color-teal-300:       #5eead4;
+  --color-teal-400:       #2dd4bf;
+
+  /* Ghost button */
+  --color-gray-600:       #4b5563;
+
+  /* Focus ring shadow for form inputs */
+  --color-primary-focus:  rgba(15, 118, 110, 0.12);
+
+  /* Typography */
+  --font-sans:    'DM Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display: 'DM Serif Display', Georgia, 'Times New Roman', serif;
+
+  --text-xs:   0.75rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-lg:   1.125rem;
+  --text-xl:   1.25rem;
+  --text-2xl:  1.5rem;
+  --text-3xl:  1.875rem;
+  --text-4xl:  2.25rem;
+  --text-5xl:  3rem;
+
+  --weight-normal:   400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+
+  --leading-tight:   1.25;
+  --leading-snug:    1.375;
+  --leading-normal:  1.5;
+  --leading-relaxed: 1.625;
+
+  --tracking-tight:   -0.025em;
+  --tracking-wide:    0.05em;
+  --tracking-widest:  0.1em;
+
+  /* Spacing Scale */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.25rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  /* Borders */
+  --radius-sm:   0.25rem;
+  --radius-md:   0.375rem;
+  --radius-lg:   0.5rem;
+  --radius-xl:   0.75rem;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.07), 0 2px 4px -2px rgba(0,0,0,0.05);
+  --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.08), 0 4px 6px -4px rgba(0,0,0,0.04);
+
+  /* Transitions */
+  --transition-fast:   150ms ease;
+  --transition-normal: 200ms ease;
+
+  /* Layout */
+  --container-max: 75rem;
+  --container-px:  1.5rem;
+  --nav-height:    4rem;
+}
+
+/* ── Reset ─────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  overflow-wrap: break-word;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+address {
+  font-style: normal;
+}
+
+/* ── Container ──────────────────────────────────────────────── */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-px);
+}
+
+.container--narrow {
+  width: 100%;
+  max-width: 42rem;
+  margin-inline: auto;
+  padding-inline: var(--container-px);
+  text-align: center;
+}
+
+/* ── Sections ───────────────────────────────────────────────── */
+.section {
+  padding-block: var(--space-20);
+  background-color: var(--color-bg);
+}
+
+.section--alt          { background-color: var(--color-bg-subtle); }
+.section--slate        { background-color: var(--color-bg-slate); }
+.section--teal-wash    { background-color: var(--color-bg-teal-wash); }
+.section--dark         { background-color: var(--color-dark); }
+.section--primary      { background-color: var(--color-primary); }
+.section--no-pb        { padding-bottom: 0; }
+.section--grad-teal    { background: linear-gradient(160deg, #f8fafc 0%, #f1f5f9 55%, #ffffff 100%); }
+.section--grad-slate   { background: linear-gradient(180deg, #f1f5f9 0%, #ffffff 100%); }
+.section--grad-subtle  { background: linear-gradient(135deg, #fbfcfd 0%, #f5f7fa 40%, #f8f9fa 100%); }
+
+/* ── Grid ───────────────────────────────────────────────────── */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-12);
+  align-items: center;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-5);
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+}
+
+/* ── Section Header ─────────────────────────────────────────── */
+.section-header {
+  margin-bottom: var(--space-12);
+}
+
+.section-label {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  font-weight: var(--weight-semibold);
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: var(--space-3);
+}
+
+.section-label--light { color: var(--color-primary-border); }
+
+.section-heading {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  font-weight: 400;
+  color: var(--color-text);
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  margin-bottom: var(--space-3);
+}
+
+.section-heading--white { color: #ffffff; }
+
+.section-subheading {
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+  max-width: 38rem;
+  line-height: var(--leading-relaxed);
+}
+
+.section-subheading--light  { color: var(--color-primary-border); }
+.section-subheading--center { margin-inline: auto; }
+
+/* ── Features Grid ──────────────────────────────────────────── */
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+}
+
+/* ── Responsive ─────────────────────────────────────────────── */
+@media (min-width: 640px) {
+  .grid-3        { grid-template-columns: 1fr 1fr; }
+  .features-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (min-width: 768px) {
+  .section-heading { font-size: var(--text-4xl); }
+}
+
+@media (min-width: 1024px) {
+  .section-heading { font-size: 2.5rem; }
+}
+
+@media (min-width: 1024px) {
+  :root { --container-px: 2rem; }
+
+  .grid-2 {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-16);
+  }
+
+  .grid-3 { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* Mobile body pad for sticky CTA bar */
+@media (max-width: 767px) {
+  body { padding-bottom: 4.5rem; }
+}
+
+/* ── Reduced Motion ─────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+  html { scroll-behavior: auto; }
+}

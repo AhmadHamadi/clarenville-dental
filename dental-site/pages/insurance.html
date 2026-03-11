@@ -1,0 +1,298 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Insurance and CDCP information at Clarenville Dental Care. Direct billing, Canadian Dental Care Plan, and flexible payment options in Clarenville, Newfoundland and Labrador." />
+  <title>Insurance & CDCP | Clarenville Dental Care</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/utilities.css" />
+</head>
+<body>
+
+  <!-- â”€â”€ Top bar â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+  <div class="topbar" role="complementary" aria-label="Contact information">
+    <div class="container">
+      <div class="topbar__inner">
+        <div class="topbar__left">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+               aria-hidden="true" focusable="false">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+          <span>259 Memorial Dr, Clarenville, NL A5A 1R4</span>
+        </div>
+        <div class="topbar__right">
+          <a href="tel:+17092000209" class="topbar__link">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                 aria-hidden="true" focusable="false">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.3 12.1a19.79 19.79 0 01-3.07-8.67A2 2 0 013.22 1.5h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.91 9a16 16 0 006.29 6.29l.86-.87a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+            </svg>
+            (709) 200-0209
+          </a>
+          <span class="topbar__sep" aria-hidden="true">|</span>
+          <a href="mailto:info@clarenvilledental.com" class="topbar__link topbar__link--hide-sm">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                 aria-hidden="true" focusable="false">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            info@clarenvilledental.com
+          </a>
+          <span class="topbar__sep topbar__link--hide-sm" aria-hidden="true">|</span>
+          <span class="topbar__hours">Monâ€“Fri 8amâ€“6pm &nbsp;Â·&nbsp; Sat 9amâ€“3pm</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar" role="banner">
+    <div class="container">
+      <div class="navbar__inner">
+        <a href="../index.html" class="navbar__logo" aria-label="Clarenville Dental Care - Home">
+          <img src="../assets/images/logo.webp" alt="" class="navbar__logo-icon" width="28" height="28" />
+          Clarenville Dental Care
+        </a>
+        <nav class="navbar__nav" aria-label="Primary navigation">
+          <a href="../index.html#services" class="navbar__link">Services</a>
+          <a href="../index.html#reviews"  class="navbar__link">Reviews</a>
+          <a href="contact.html"           class="navbar__link">Contact</a>
+          <a href="contact.html#book-form" class="btn btn--primary">Book Appointment</a>
+        </nav>
+        <button id="navbar-toggle" class="navbar__toggle" aria-label="Open navigation menu"
+                aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+               aria-hidden="true" focusable="false">
+            <line x1="3" y1="6"  x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu">
+      <nav class="mobile-menu__nav">
+        <a href="../index.html#services" class="mobile-menu__link">Services</a>
+        <a href="../index.html#reviews"  class="mobile-menu__link">Reviews</a>
+        <a href="contact.html"           class="mobile-menu__link">Contact</a>
+        <a href="contact.html#book-form" class="btn btn--primary mobile-menu__cta">Book Appointment</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Page header -->
+    <section class="section section--primary" aria-labelledby="insurance-page-heading">
+      <div class="container">
+        <span class="section-label section-label--light">Coverage &amp; Payment</span>
+        <h1 id="insurance-page-heading" class="section-heading section-heading--white">
+          Insurance &amp; Canadian Dental Care Plan
+        </h1>
+        <p class="section-subheading section-subheading--light">
+          We believe cost should never be a barrier to good dental health.
+          Here's how we make care accessible for every patient.
+        </p>
+      </div>
+    </section>
+
+    <!-- Direct Billing -->
+    <section class="section" aria-labelledby="billing-heading">
+      <div class="container">
+        <div class="grid-2">
+          <div>
+            <div class="icon-box icon-box--teal mb-4" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                   aria-hidden="true" focusable="false">
+                <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+                <line x1="1" y1="10" x2="23" y2="10"/>
+              </svg>
+            </div>
+            <h2 id="billing-heading" class="section-heading">Direct Insurance Billing</h2>
+            <p class="dentist__bio">
+              We bill your insurance provider directly â€” which means you pay only your portion at the time of
+              your appointment and we handle the rest. No forms to mail, no waiting for reimbursements.
+            </p>
+            <p class="dentist__bio">
+              We accept all major insurance providers including Sun Life, Great-West Life, Manulife, Canada Life,
+              Sunlife Financial, Blue Cross, and more. Our front desk team will verify your coverage before
+              your appointment so there are no surprises.
+            </p>
+          </div>
+          <div class="insurance-grid">
+            <div class="insurance-tile insurance-tile--light">
+              <p class="insurance-tile__value">Sun Life</p>
+              <p class="insurance-tile__label">Direct Billing</p>
+            </div>
+            <div class="insurance-tile insurance-tile--light">
+              <p class="insurance-tile__value">Manulife</p>
+              <p class="insurance-tile__label">Direct Billing</p>
+            </div>
+            <div class="insurance-tile insurance-tile--light">
+              <p class="insurance-tile__value">Canada Life</p>
+              <p class="insurance-tile__label">Direct Billing</p>
+            </div>
+            <div class="insurance-tile insurance-tile--light">
+              <p class="insurance-tile__value">All Major</p>
+              <p class="insurance-tile__label">Carriers Accepted</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CDCP -->
+    <section class="section section--alt" aria-labelledby="cdcp-heading">
+      <div class="container">
+        <div class="grid-2">
+          <div class="insurance-grid insurance-grid--start">
+            <div class="insurance-tile insurance-tile--primary">
+              <p class="insurance-tile__value">CDCP</p>
+              <p class="insurance-tile__label">Government Program</p>
+            </div>
+            <div class="insurance-tile insurance-tile--primary">
+              <p class="insurance-tile__value">Free</p>
+              <p class="insurance-tile__label">No Cost to Check Eligibility</p>
+            </div>
+            <div class="insurance-tile insurance-tile--primary">
+              <p class="insurance-tile__value">All Ages</p>
+              <p class="insurance-tile__label">Children, Adults &amp; Seniors</p>
+            </div>
+            <div class="insurance-tile insurance-tile--primary">
+              <p class="insurance-tile__value">2025</p>
+              <p class="insurance-tile__label">Program Currently Active</p>
+            </div>
+          </div>
+          <div>
+            <h2 id="cdcp-heading" class="section-heading">Canadian Dental Care Plan (CDCP)</h2>
+            <p class="dentist__bio">
+              The Canadian Dental Care Plan is a federal government program providing dental coverage
+              to eligible Canadians who don't have access to private dental insurance. Clarenville Dental Care
+              is a registered CDCP provider.
+            </p>
+            <p class="dentist__bio">
+              The plan covers a range of dental services including examinations, X-rays, cleanings,
+              fillings, extractions, and more depending on your eligibility level.
+            </p>
+            <p class="dentist__bio">
+              To check if you qualify, visit the Government of Canada website or contact our office â€”
+              we're happy to help you navigate the process at no charge.
+            </p>
+            <a href="contact.html#book-form" class="btn btn--primary">Check Your Eligibility</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Payment Options -->
+    <section class="section" aria-labelledby="payment-heading">
+      <div class="container--narrow">
+        <div class="icon-box icon-box--teal mb-4 mx-auto" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+               aria-hidden="true" focusable="false">
+            <line x1="12" y1="1" x2="12" y2="23"/>
+            <path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
+          </svg>
+        </div>
+        <h2 id="payment-heading" class="section-heading">Flexible Payment Options</h2>
+        <p class="section-subheading section-subheading--center">
+          For uninsured patients or larger treatments not fully covered by insurance, we offer interest-free
+          monthly payment plans. Ask our front desk team for details during your consultation â€” we'll find
+          a plan that works for your budget.
+        </p>
+        <div class="btn-group btn-group--center mt-8">
+          <a href="contact.html#book-form" class="btn btn--primary">Book a Consultation</a>
+          <a href="tel:+17092000209"       class="btn btn--secondary">Call (709) 200-0209</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-logo">
+            <img src="../assets/images/logo.webp" alt="" class="footer__brand-logo-icon" width="22" height="22" />
+            Clarenville Dental Care
+          </div>
+          <address class="footer__address">
+            259 Memorial Dr<br/>
+            Clarenville, NL A5A 1R4<br/>
+            <a href="tel:+17092000209">(709) 200-0209</a><br/>
+            <a href="mailto:info@clarenvilledental.com">info@clarenvilledental.com</a>
+          </address>
+        </div>
+        <div>
+          <h3 class="footer__col-heading">Services</h3>
+          <ul class="footer__links">
+            <li><a href="services.html#emergency"  class="footer__link">Emergency Dentistry</a></li>
+            <li><a href="services.html#invisalign" class="footer__link">Invisalign</a></li>
+            <li><a href="services.html#implants"   class="footer__link">Dental Implants</a></li>
+            <li><a href="services.html#whitening"  class="footer__link">Teeth Whitening</a></li>
+            <li><a href="services.html#family"     class="footer__link">Family Dentistry</a></li>
+            <li><a href="services.html#children"   class="footer__link">Children's Dentistry</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__col-heading">Clinic Hours</h3>
+          <div class="footer__hours">
+            <div class="footer__hours-row">
+              <span>Monday â€“ Friday</span>
+              <span>8:00 AM â€“ 6:00 PM</span>
+            </div>
+            <div class="footer__hours-row">
+              <span>Saturday</span>
+              <span>9:00 AM â€“ 3:00 PM</span>
+            </div>
+            <div class="footer__hours-row">
+              <span>Sunday</span>
+              <span>Closed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2025 Clarenville Dental Care. All rights reserved.</p>
+        <nav class="footer__legal" aria-label="Legal links">
+          <a href="#" class="footer__legal-link">Privacy Policy</a>
+          <a href="#" class="footer__legal-link">Terms of Service</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile sticky CTA -->
+  <div class="mobile-cta" role="region" aria-label="Quick contact actions">
+  <a href="tel:+17092000209" class="btn btn--secondary mobile-cta__phone" aria-label="Call Clarenville Dental Care">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+      <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.3 12.1a19.79 19.79 0 01-3.07-8.67A2 2 0 013.22 1.5h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.91 9a16 16 0 006.29 6.29l.86-.87a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+    </svg>
+  </a>
+  <a href="contact.html#book-form" class="btn btn--primary">Contact Us</a>
+</div>
+
+  <script type="module">
+    import { initNavigation } from '../js/navigation.js';
+    document.addEventListener('DOMContentLoaded', initNavigation);
+  </script>
+
+</body>
+</html>
+
+

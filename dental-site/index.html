@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Clarenville Dental Care is your local family and emergency dentist in Clarenville, NL. We provide cleanings, dental exams, Invisalign, implants, and same-day emergency appointments. New patients welcome." />
+  <meta name="keywords" content="Clarenville dentist, dentist Clarenville NL, family dentist Clarenville, emergency dentist Clarenville, dental clinic Clarenville, Invisalign Clarenville, teeth whitening Clarenville, dental implants Clarenville, CDCP dentist Clarenville, dentist near me Clarenville" />
+  <link rel="canonical" href="https://clarenvilledental.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Clarenville Dental Care | Family Dentist in Clarenville, NL" />
+  <meta property="og:description" content="Local family and emergency dentist in Clarenville, NL. Cleanings, Invisalign, implants, and same-day emergency care." />
+  <meta property="og:url" content="https://clarenvilledental.com/" />
+  <meta property="og:locale" content="en_CA" />
+  <meta name="twitter:card" content="summary_large_image" />
+  
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Clarenville Dental Care",
+      "url": "https://clarenvilledental.com/",
+      "telephone": "+1-709-200-0209",
+      "email": "info@clarenvilledental.com",
+      "image": "https://clarenvilledental.com/assets/images/logo.webp",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "259 Memorial Dr",
+        "addressLocality": "Clarenville",
+        "addressRegion": "NL",
+        "postalCode": "A5A 1R4",
+        "addressCountry": "CA"
+      },
+      "areaServed": [
+        "Clarenville",
+        "Shoal Harbour",
+        "Milton",
+        "Georgetown",
+        "Harbour Grace"
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "15:00"
+        }
+      ]
+    }
+  </script>
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+
+  <!-- Fonts: DM Serif Display (headings) + DM Sans (body/UI) -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/utilities.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Navbar injected by main.js -->
+  <div id="c-navbar"></div>
+
+  <main id="main-content" tabindex="-1">
+
+    <!-- Hero injected by main.js -->
+    <div id="c-hero"></div>
+
+    <!-- ── Request an Appointment (wide box under hero) ───────────────── -->
+    <section class="section section--grad-subtle request-appt" aria-label="Request an appointment">
+      <div class="container">
+        <h2 class="request-appt__heading">
+          Request an <span class="request-appt__heading-accent">Appointment</span>
+        </h2>
+
+        <div class="request-appt__box">
+          <form class="request-appt__form" id="appt-cta-form" novalidate>
+            <div class="request-appt__row request-appt__row--fields">
+              <div class="request-appt__field">
+                <label for="appt-name" class="sr-only">Your Name</label>
+                <input type="text" id="appt-name" name="name"
+                       class="request-appt__input" placeholder="Your Name"
+                       required autocomplete="name" />
+              </div>
+              <div class="request-appt__field">
+                <label for="appt-email" class="sr-only">Email</label>
+                <input type="email" id="appt-email" name="email"
+                       class="request-appt__input" placeholder="Email"
+                       required autocomplete="email" />
+              </div>
+              <div class="request-appt__field">
+                <label for="appt-phone" class="sr-only">Phone</label>
+                <input type="tel" id="appt-phone" name="phone"
+                       class="request-appt__input" placeholder="Phone"
+                       required autocomplete="tel" />
+              </div>
+              <div class="request-appt__field">
+                <label for="appt-patient" class="sr-only">New Patient</label>
+                <select id="appt-patient" name="patient_type" class="request-appt__input request-appt__select">
+                  <option value="" disabled selected>New Patient</option>
+                  <option value="yes">Yes – New Patient</option>
+                  <option value="no">No – Existing Patient</option>
+                </select>
+              </div>
+            </div>
+            <div class="request-appt__row request-appt__row--bottom">
+              <div class="request-appt__field request-appt__field--comments">
+                <label for="appt-comments" class="sr-only">Comments</label>
+                <input type="text" id="appt-comments" name="comments"
+                       class="request-appt__input" placeholder="Comments (optional)" />
+              </div>
+              <div class="request-appt__field request-appt__field--btn">
+                <button type="submit" class="btn btn--primary request-appt__btn">
+                  Request Appointment
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Spotlight: Need a dentist? (gradient bg + white card) ──── -->
+    <section class="section spotlight" aria-labelledby="spotlight-heading">
+      <div class="container">
+        <div class="spotlight__card">
+          <div class="spotlight__media">
+            <img
+              src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=720&q=85"
+              alt="Modern dental treatment room at Clarenville Dental Care in Clarenville, Newfoundland and Labrador"
+              width="720"
+              height="480"
+              loading="lazy"
+              class="spotlight__img"
+            />
+          </div>
+          <div class="spotlight__content">
+            <div class="spotlight__strip">
+              <span class="spotlight__pill">Open</span>
+              <span class="spotlight__strip-text">Appointments — Clarenville &amp; surrounding area</span>
+            </div>
+            <h2 id="spotlight-heading" class="spotlight__heading">
+              Need a dentist near you in Clarenville?
+            </h2>
+            <p class="spotlight__intro">
+              Schedule your checkup or cleaning at Clarenville Dental Care. We offer patient-focused care
+              and convenient appointment times so you can keep your smile healthy without the hassle.
+            </p>
+            <ul class="spotlight__list" role="list">
+              <li>Checkups &amp; cleanings — keep your smile healthy</li>
+              <li>Teeth whitening — brighten your smile</li>
+              <li>Invisalign &amp; clear aligners — discreet straightening</li>
+              <li>Preventive care — address concerns early</li>
+            </ul>
+            <div class="spotlight__cta">
+              <a href="pages/contact.html#book-form" class="btn btn--primary spotlight__btn">Book a Visit</a>
+              <a href="tel:+17092000209" class="spotlight__phone">(709) 200-0209</a>
+            </div>
+            <address class="spotlight__address">
+              259 Memorial Dr, Clarenville, NL A5A 1R4
+            </address>
+            <p class="spotlight__keywords">
+              Popular searches: emergency dentist Clarenville, family dentist Clarenville NL, dentist near me Clarenville, Invisalign Clarenville, dental cleaning Clarenville
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Feature Highlights (bg image + gradient for readable text) ─ -->
+    <section class="section highlights" aria-labelledby="highlights-heading">
+      <div class="highlights__bg" aria-hidden="true"></div>
+      <div class="container highlights__container">
+
+        <div class="section-header">
+          <h2 id="highlights-heading" class="section-heading">Care You Can Count On</h2>
+          <p class="section-subheading">
+            Everything we do is designed around your comfort, convenience, and confidence.
+          </p>
+        </div>
+
+        <div class="highlights-grid">
+
+          <div class="highlight-card reveal">
+            <span class="highlight-card__num" aria-hidden="true">01</span>
+            <h3 class="highlight-card__title">Same-Day Emergency Slots</h3>
+            <p class="highlight-card__desc">
+              We hold appointment slots every day for dental emergencies — walk-ins welcome.
+              No long waits when pain strikes.
+            </p>
+          </div>
+
+          <div class="highlight-card reveal reveal-delay-1">
+            <span class="highlight-card__num" aria-hidden="true">02</span>
+            <h3 class="highlight-card__title">Direct Insurance &amp; CDCP Billing</h3>
+            <p class="highlight-card__desc">
+              We bill all major insurers directly and proudly participate in the Canadian Dental Care Plan.
+              You pay only your portion — we handle the rest.
+            </p>
+          </div>
+
+          <div class="highlight-card reveal reveal-delay-2">
+            <span class="highlight-card__num" aria-hidden="true">03</span>
+            <h3 class="highlight-card__title">Now Welcoming New Patients</h3>
+            <p class="highlight-card__desc">
+              Our practice is open to new patients of all ages. Book online or call —
+              we'll get you in quickly and make your first visit seamless.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── About / Info + Image ─────────────────────────────────── -->
+    <section class="section about-preview" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-preview__grid">
+
+          <!-- Image -->
+          <div class="about-preview__media">
+            <img
+              src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=720&q=80"
+              alt="Dental clinic treatment area for exams and cleanings in Clarenville, NL"
+              width="720"
+              height="540"
+              loading="lazy"
+              class="about-preview__img"
+            />
+          </div>
+
+          <!-- Content -->
+          <div class="about-preview__content">
+            <span class="section-label">About Our Practice</span>
+            <h2 id="about-heading" class="section-heading">
+              Patient-Centred Care in the Heart of Clarenville
+            </h2>
+            <p class="dentist__bio">
+              At Clarenville Dental Care, every patient is more than a chart number. From your first phone call
+              to your follow-up care, our team is committed to clear communication, gentle treatment, and
+              outcomes you can be proud of.
+            </p>
+            <p class="dentist__bio">
+              Our modern clinic is equipped with the latest digital imaging and dental technology,
+              so you spend less time in the chair and more time enjoying your results. Whether you need
+              a routine cleaning or a complete smile transformation, you'll always feel comfortable and
+              informed every step of the way.
+            </p>
+            <div class="btn-group mt-8">
+              <a href="pages/contact.html#book-form" class="btn btn--primary">Book an Appointment</a>
+              <a href="tel:+17092000209" class="about-preview__phone-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     aria-hidden="true" focusable="false">
+                  <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.3 12.1a19.79 19.79 0 01-3.07-8.67A2 2 0 013.22 1.5h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.91 9a16 16 0 006.29 6.29l.86-.87a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                </svg>
+                (709) 200-0209
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Services injected by main.js -->
+    <div id="c-services"></div>
+
+    <!-- ── Why We're Different (card: text + features left, image right) ─ -->
+    <section class="section why-different" aria-labelledby="why-heading">
+      <div class="container">
+        <div class="why-different__card">
+
+          <div class="why-different__grid">
+            <!-- Left: Heading, copy, feature grid, CTA -->
+            <div class="why-different__content">
+              <h2 id="why-heading" class="why-different__heading">
+                Why choose <span class="why-different__heading-accent">Clarenville Dental Care</span>
+              </h2>
+              <p class="why-different__intro">
+                Clarenville Dental Care is a modern family dental clinic in Clarenville, Newfoundland and Labrador, offering comprehensive general and cosmetic care for all ages — from routine cleanings to Invisalign and personalized smile solutions. Your smile and comfort are our priority.
+              </p>
+              <p class="why-different__intro">
+                Our mission is to deliver high-quality, patient-focused care in a comfortable, modern setting. We use advanced technology and a personalized approach so you can maintain a healthy, confident smile.
+              </p>
+              <ul class="why-different__list" role="list">
+                <li class="why-different__item">
+                  <span class="why-different__check" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                  </span>
+                  <span class="why-different__label">Advanced Technology</span>
+                </li>
+                <li class="why-different__item">
+                  <span class="why-different__check" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                  </span>
+                  <span class="why-different__label">Personalized Care</span>
+                </li>
+                <li class="why-different__item">
+                  <span class="why-different__check" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                  </span>
+                  <span class="why-different__label">Same-Day Emergency Care</span>
+                </li>
+                <li class="why-different__item">
+                  <span class="why-different__check" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                  </span>
+                  <span class="why-different__label">Direct Insurance &amp; CDCP</span>
+                </li>
+                <li class="why-different__item">
+                  <span class="why-different__check" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                  </span>
+                  <span class="why-different__label">Comfortable Environment</span>
+                </li>
+                <li class="why-different__item">
+                  <span class="why-different__check" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                  </span>
+                  <span class="why-different__label">Expert Team</span>
+                </li>
+              </ul>
+              <a href="pages/contact.html#book-form" class="btn btn--primary why-different__btn">Book Appointment</a>
+            </div>
+
+            <!-- Right: Image -->
+            <div class="why-different__media">
+              <img
+                src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=720&q=80"
+                alt="Dentist and team providing family and emergency dental care in Clarenville, NL"
+                width="720"
+                height="540"
+                loading="lazy"
+                class="why-different__img"
+              />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Meet the Dentist ────────────────────────────────────── -->
+    <section class="section dentist-section" aria-labelledby="dentist-heading">
+      <div class="container">
+        <div class="grid-2">
+
+          <!-- Dentist stock photo -->
+          <div class="dentist__photo">
+            <img
+              src="assets/images/dr-reem.webp"
+              alt="Dr. Reem, lead dentist at Clarenville Dental Care, smiling in clinic attire"
+              width="500"
+              height="667"
+              loading="lazy"
+            />
+          </div>
+
+          <!-- Bio -->
+          <div>
+            <span class="section-label">Meet the Dentist</span>
+            <h2 id="dentist-heading" class="section-heading">Dr. Reem, DDS</h2>
+            <p class="dentist__bio">
+              Dr. Reem has over 15 years of experience providing high-quality dental care to families
+              across Clarenville. His practice focuses on patient comfort, advanced digital diagnostics, and
+              personalized treatment plans tailored to each patient's needs and budget.
+            </p>
+            <p class="dentist__bio">
+              A graduate of the University of Toronto Faculty of Dentistry, Dr. Reem is a member of the
+              Ontario Dental Association and maintains continuing education in implantology, orthodontics,
+              and minimally invasive dentistry.
+            </p>
+            <div class="dentist__tags">
+              <span class="dentist__tag">University of Toronto, DDS</span>
+              <span class="dentist__tag">Ontario Dental Association</span>
+              <span class="dentist__tag">15+ Years Practice</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews injected by main.js -->
+    <div id="c-reviews"></div>
+
+    <!-- ── Insurance + CDCP ────────────────────────────────────── -->
+    <section class="section section--primary insurance-section" aria-labelledby="insurance-heading">
+      <div class="container">
+        <div class="grid-2">
+
+          <div>
+            <span class="section-label section-label--light">Coverage &amp; Payment</span>
+            <h2 id="insurance-heading" class="section-heading section-heading--white">
+              Insurance &amp; Canadian Dental Care Plan (CDCP)
+            </h2>
+            <p class="section-subheading section-subheading--light mb-6">
+              We make dental care accessible. Our team handles direct billing to all major insurance providers
+              so you never deal with paperwork or wait for reimbursements.
+            </p>
+
+            <ul class="insurance-list" role="list">
+              <li class="insurance-list__item">
+                <svg class="insurance-list__icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     aria-hidden="true" focusable="false">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                Direct billing to Sun Life, Great-West Life, Manulife, and all major carriers
+              </li>
+              <li class="insurance-list__item">
+                <svg class="insurance-list__icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     aria-hidden="true" focusable="false">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                Proud participant in the Canadian Dental Care Plan (CDCP) for eligible Canadians
+              </li>
+              <li class="insurance-list__item">
+                <svg class="insurance-list__icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     aria-hidden="true" focusable="false">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                Flexible payment plans for uninsured patients and larger treatments
+              </li>
+            </ul>
+
+            <a href="pages/insurance.html" class="btn btn--white">Check Your Coverage</a>
+          </div>
+
+          <div class="insurance-grid">
+            <div class="insurance-tile">
+              <p class="insurance-tile__value">CDCP</p>
+              <p class="insurance-tile__label">Canadian Dental Care Plan Accepted</p>
+            </div>
+            <div class="insurance-tile">
+              <p class="insurance-tile__value">Direct</p>
+              <p class="insurance-tile__label">Insurance Billing – No Upfront Fees</p>
+            </div>
+            <div class="insurance-tile">
+              <p class="insurance-tile__value">Flexible</p>
+              <p class="insurance-tile__label">Payment Plans Available</p>
+            </div>
+            <div class="insurance-tile">
+              <p class="insurance-tile__value">All Ages</p>
+              <p class="insurance-tile__label">Children, Adults &amp; Seniors Welcome</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ injected by main.js -->
+    <div id="c-faq"></div>
+
+    <!-- ── Location ────────────────────────────────────────────── -->
+    <section id="contact" class="section" aria-labelledby="location-heading">
+      <div class="container">
+
+        <div class="section-header">
+          <h2 id="location-heading" class="section-heading">Serving Clarenville and Surrounding Communities</h2>
+          <p class="section-subheading">
+            Conveniently located in Clarenville, we proudly serve patients from
+            <strong>Clarenville</strong>, <strong>Shoal Harbour</strong>, <strong>Milton</strong>,
+            <strong>Georgetown</strong>, and nearby communities in the Clarenville area.
+          </p>
+        </div>
+
+        <div class="grid-2">
+
+          <!-- Map placeholder – replace with Google Maps <iframe> -->
+          <iframe
+            title="Clarenville Dental Care on Google Maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.33454792981!2d-53.97099172423673!3d48.16163314948695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b74786ffc52d5a9%3A0x4698daaa30592f12!2sClarenville%20Dental%20Care!5e0!3m2!1sen!2sca!4v1773251282679!5m2!1sen!2sca"
+            width="800"
+            height="600"
+            style="border:0; width:100%; min-height:420px; border-radius:16px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+
+          <!-- Contact details -->
+          <div class="contact-items">
+
+            <div class="contact-item">
+              <div class="icon-box icon-box--teal flex-shrink-0" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     aria-hidden="true" focusable="false">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div>
+                <p class="contact-item__label">Address</p>
+                <address class="contact-item__value">
+                  259 Memorial Dr<br/>Clarenville, NL A5A 1R4
+                </address>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="icon-box icon-box--teal flex-shrink-0" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     aria-hidden="true" focusable="false">
+                  <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.3 12.1a19.79 19.79 0 01-3.07-8.67A2 2 0 013.22 1.5h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.91 9a16 16 0 006.29 6.29l.86-.87a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                </svg>
+              </div>
+              <div>
+                <p class="contact-item__label">Phone</p>
+                <a href="tel:+17092000209" class="contact-item__link">(709) 200-0209</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="icon-box icon-box--teal flex-shrink-0" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     aria-hidden="true" focusable="false">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div>
+                <p class="contact-item__label">Email</p>
+                <a href="mailto:info@clarenvilledental.com" class="contact-item__link">
+                  info@clarenvilledental.com
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="icon-box icon-box--teal flex-shrink-0" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     aria-hidden="true" focusable="false">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                  <line x1="16" y1="2" x2="16" y2="6"/>
+                  <line x1="8"  y1="2" x2="8"  y2="6"/>
+                  <line x1="3"  y1="10" x2="21" y2="10"/>
+                </svg>
+              </div>
+              <div>
+                <p class="contact-item__label">Hours</p>
+                <p class="contact-item__value">
+                  Mon – Fri: 8:00 AM – 6:00 PM<br/>
+                  Saturday: 9:00 AM – 3:00 PM<br/>
+                  Sunday: Closed
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Final CTA ───────────────────────────────────────────── -->
+    <section id="book" class="cta-section" aria-labelledby="cta-heading">
+      <div class="container">
+        <h2 id="cta-heading" class="cta-section__heading">Book Your Appointment Today</h2>
+        <p class="cta-section__subheading">
+          We are accepting new patients. Same-day appointments available for dental emergencies.
+          Call or book online in seconds.
+        </p>
+        <div class="btn-group btn-group--center mt-10">
+          <a href="pages/contact.html#book-form" class="btn btn--primary">Book Appointment</a>
+          <a href="tel:+17092000209" class="btn btn--ghost-white">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                 aria-hidden="true" focusable="false">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.3 12.1a19.79 19.79 0 01-3.07-8.67A2 2 0 013.22 1.5h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.91 9a16 16 0 006.29 6.29l.86-.87a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+            </svg>
+            Contact Us
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer + mobile CTA injected by main.js -->
+  <div id="c-footer"></div>
+
+  <!-- ES module entry point -->
+  <script type="module" src="js/main.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

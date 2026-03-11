@@ -1,0 +1,92 @@
+<!-- ============================================================
+     COMPONENT: hero.html
+     Full-bleed background image hero with overlay + stat strip
+     ============================================================ -->
+<section class="hero" aria-labelledby="hero-heading">
+
+  <!-- Background image -->
+  <div class="hero__bg" aria-hidden="true">
+    <img
+      src="https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&w=1800&q=85"
+      alt=""
+      width="1800"
+      height="1013"
+      loading="eager"
+      fetchpriority="high"
+    />
+  </div>
+
+  <!-- Dark overlay for readability -->
+  <div class="hero__overlay" aria-hidden="true"></div>
+
+  <!-- Content on top -->
+  <div class="container hero__container">
+
+    <div class="hero__content">
+
+      <div class="hero__badge">
+        <span class="badge badge--teal">
+          <span class="badge__dot" aria-hidden="true"></span>
+          Now Accepting New Patients
+        </span>
+      </div>
+
+      <h1 id="hero-heading" class="hero__heading">
+        Clarenville's Trusted
+        <span class="hero__heading-accent">Family Dentist</span>
+      </h1>
+
+      <p class="hero__subheading">
+        Emergency, cosmetic, and family dentistry — same-day appointments,
+        direct insurance billing, and CDCP accepted.
+      </p>
+
+      <!-- CTAs -->
+      <div class="btn-group">
+        <a href="#book" class="btn btn--primary btn--lg">Book Appointment</a>
+        <a href="tel:+12897552568" class="btn btn--ghost-white btn--lg">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+               aria-hidden="true" focusable="false">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.3 12.1a19.79 19.79 0 01-3.07-8.67A2 2 0 013.22 1.5h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.91 9a16 16 0 006.29 6.29l.86-.87a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+          </svg>
+          (289) 755-2568
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Stat strip anchored to bottom -->
+    <div class="hero__stats" aria-label="Practice highlights">
+
+      <div class="hero__stat">
+        <span class="hero__stat-value">15+</span>
+        <span class="hero__stat-label">Years of Care</span>
+      </div>
+
+      <div class="hero__stat-divider" aria-hidden="true"></div>
+
+      <div class="hero__stat">
+        <span class="hero__stat-value">300+</span>
+        <span class="hero__stat-label">Happy Patients</span>
+      </div>
+
+      <div class="hero__stat-divider" aria-hidden="true"></div>
+
+      <div class="hero__stat">
+        <span class="hero__stat-value">4.9<span class="hero__stat-star" aria-label="stars">★</span></span>
+        <span class="hero__stat-label">Google Rating</span>
+      </div>
+
+      <div class="hero__stat-divider" aria-hidden="true"></div>
+
+      <div class="hero__stat">
+        <span class="hero__stat-value">CDCP</span>
+        <span class="hero__stat-label">Provider Accepted</span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
