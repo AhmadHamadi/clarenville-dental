@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CDCP dentist in Clarenville, NL. Clarenville Dental Care helps patients use the Canadian Dental Care Plan for checkups, cleanings, treatment planning, and routine dental visits." />
+  <title>CDCP Dentist in Clarenville, NL | Clarenville Dental Care</title>
+  <link rel="canonical" href="https://clarenvilledental.com/cdcp-dentist-clarenville" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="CDCP Dentist in Clarenville, NL | Clarenville Dental Care" />
+  <meta property="og:description" content="Clarenville Dental Care supports patients using the Canadian Dental Care Plan in Clarenville, NL." />
+  <meta property="og:url" content="https://clarenvilledental.com/cdcp-dentist-clarenville" />
+  <meta property="og:locale" content="en_CA" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/utilities.css" />
+  <style>
+    .cdcp-page {
+      --cdcp-ink: #18373c;
+      --cdcp-soft: #f5fbfb;
+      --cdcp-accent: #dff4f2;
+      --cdcp-border: rgba(17, 92, 95, 0.14);
+      --cdcp-surface: rgba(255, 255, 255, 0.08);
+      --cdcp-hero-border: rgba(255, 255, 255, 0.16);
+      --cdcp-hero-text: rgba(243, 247, 250, 0.92);
+    }
+
+    .cdcp-page .page-hero {
+      --page-hero-image: linear-gradient(135deg, #0f5a5f 0%, #1b6e73 48%, #275862 100%);
+      padding-bottom: clamp(3.5rem, 5vw, 5rem);
+    }
+
+    .cdcp-page .page-hero .section-label,
+    .cdcp-page .page-hero .section-heading,
+    .cdcp-page .page-hero__lede {
+      color: #ffffff;
+    }
+
+    .cdcp-page .page-hero__grid {
+      grid-template-columns: minmax(0, 1.25fr) minmax(320px, 0.95fr);
+      align-items: start;
+    }
+
+    .cdcp-page .page-hero__content {
+      max-width: 44rem;
+    }
+
+    .cdcp-page .page-hero__lede {
+      max-width: 40rem;
+      color: var(--cdcp-hero-text);
+    }
+
+    .cdcp-page .page-hero__actions .btn--secondary,
+    .cdcp-page .page-hero__actions .btn--secondary:visited {
+      background: rgba(255, 255, 255, 0.08);
+      color: #ffffff;
+      border-color: rgba(255, 255, 255, 0.22);
+    }
+
+    .cdcp-page .page-hero__actions .btn--secondary:hover {
+      background: rgba(255, 255, 255, 0.14);
+    }
+
+    .cdcp-hero__grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .cdcp-hero__card,
+    .cdcp-panel,
+    .cdcp-mini-card,
+    .cdcp-link-card,
+    .cdcp-cta {
+      border-radius: 1.4rem;
+      border: 1px solid var(--cdcp-border);
+      box-shadow: 0 20px 60px rgba(16, 53, 60, 0.08);
+    }
+
+    .cdcp-hero__card {
+      background: var(--cdcp-surface);
+      border: 1px solid var(--cdcp-hero-border);
+      padding: 1.4rem;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 18px 48px rgba(6, 27, 32, 0.14);
+    }
+
+    .cdcp-hero__value {
+      margin: 0 0 0.45rem;
+      color: #ffffff;
+      font-family: var(--font-display);
+      font-size: clamp(1.65rem, 2vw, 2.2rem);
+      line-height: 1.05;
+    }
+
+    .cdcp-hero__label {
+      margin: 0;
+      color: var(--cdcp-hero-text);
+      font-size: var(--text-sm);
+    }
+
+    .cdcp-intro {
+      margin-top: calc(var(--space-8) * -1);
+      position: relative;
+      z-index: 2;
+    }
+
+    .cdcp-eligibility {
+      background: linear-gradient(135deg, #f3fbfb 0%, #e3f4f3 100%);
+      border-top: 1px solid rgba(15, 118, 110, 0.12);
+      border-bottom: 1px solid rgba(15, 118, 110, 0.12);
+    }
+
+    .cdcp-eligibility__card {
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) auto;
+      gap: 1rem;
+      align-items: center;
+      padding: clamp(1.4rem, 2vw, 1.9rem);
+      background: #ffffff;
+      border-radius: 1.5rem;
+      border: 1px solid var(--cdcp-border);
+      box-shadow: 0 20px 60px rgba(16, 53, 60, 0.08);
+    }
+
+    .cdcp-eligibility__card p {
+      margin: 0;
+    }
+
+    .cdcp-eligibility__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.875rem;
+      justify-content: flex-end;
+    }
+
+    .cdcp-intro__grid,
+    .cdcp-two-up,
+    .cdcp-links {
+      display: grid;
+      gap: 1.25rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .cdcp-panel,
+    .cdcp-mini-card,
+    .cdcp-link-card {
+      background: #ffffff;
+      padding: clamp(1.35rem, 2vw, 1.75rem);
+    }
+
+    .cdcp-panel--soft {
+      background: linear-gradient(180deg, #ffffff 0%, var(--cdcp-soft) 100%);
+    }
+
+    .cdcp-kicker {
+      margin: 0 0 0.6rem;
+      color: var(--color-primary);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .cdcp-panel h2,
+    .cdcp-panel h3,
+    .cdcp-mini-card h3,
+    .cdcp-link-card h3,
+    .cdcp-cta h2 {
+      margin: 0 0 0.7rem;
+      color: var(--cdcp-ink);
+    }
+
+    .cdcp-panel p,
+    .cdcp-mini-card p,
+    .cdcp-link-card p,
+    .cdcp-cta p {
+      margin: 0;
+    }
+
+    .cdcp-panel p + p,
+    .cdcp-mini-card p + p,
+    .cdcp-link-card p + p {
+      margin-top: 0.85rem;
+    }
+
+    .cdcp-checks {
+      display: grid;
+      gap: 0.9rem;
+      margin-top: 1.2rem;
+      padding: 0;
+      list-style: none;
+    }
+
+    .cdcp-checks li {
+      display: grid;
+      grid-template-columns: 1.2rem 1fr;
+      gap: 0.85rem;
+      color: var(--color-text-secondary);
+    }
+
+    .cdcp-checks li::before {
+      content: "•";
+      color: var(--color-primary);
+      font-size: 1.3rem;
+      line-height: 1;
+    }
+
+    .cdcp-steps {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1.2rem;
+    }
+
+    .cdcp-step {
+      padding: 1rem 1.05rem;
+      border-radius: 1rem;
+      background: var(--cdcp-soft);
+      border: 1px solid rgba(17, 92, 95, 0.08);
+    }
+
+    .cdcp-step strong {
+      display: block;
+      margin-bottom: 0.25rem;
+      color: var(--cdcp-ink);
+    }
+
+    .cdcp-band {
+      background: linear-gradient(135deg, #103840 0%, #16515a 100%);
+    }
+
+    .cdcp-band .section-label,
+    .cdcp-band .section-heading,
+    .cdcp-band .section-subheading,
+    .cdcp-band .cdcp-mini-card h3,
+    .cdcp-band .cdcp-mini-card p {
+      color: #f4fbfb;
+    }
+
+    .cdcp-band .cdcp-mini-card {
+      background: rgba(255, 255, 255, 0.07);
+      border-color: rgba(255, 255, 255, 0.12);
+      box-shadow: none;
+    }
+
+    .cdcp-link-card a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-top: 1rem;
+      color: var(--color-primary);
+      font-weight: var(--weight-semibold);
+      text-decoration: none;
+    }
+
+    .cdcp-link-card a:hover {
+      text-decoration: underline;
+    }
+
+    .cdcp-cta {
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) auto;
+      gap: 1rem;
+      align-items: center;
+      background: linear-gradient(135deg, #f4fbfb 0%, #e5f5f3 100%);
+      padding: clamp(1.4rem, 2vw, 1.8rem);
+    }
+
+    .cdcp-cta__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.875rem;
+      justify-content: flex-end;
+    }
+
+    @media (max-width: 900px) {
+      .cdcp-page .page-hero__grid,
+      .cdcp-eligibility__card,
+      .cdcp-intro__grid,
+      .cdcp-two-up,
+      .cdcp-links,
+      .cdcp-cta {
+        grid-template-columns: 1fr;
+      }
+
+      .cdcp-cta__actions,
+      .cdcp-eligibility__actions {
+        justify-content: flex-start;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .cdcp-hero__grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topbar" role="complementary" aria-label="Contact information">
+    <div class="container">
+      <div class="topbar__inner">
+        <div class="topbar__left"><span>259 Memorial Dr, Clarenville, NL A5A 1R4</span></div>
+        <div class="topbar__right"><a href="tel:+17092000209" class="topbar__link">(709) 200-0209</a></div>
+      </div>
+    </div>
+  </div>
+
+  <header class="navbar" role="banner">
+    <div class="container">
+      <div class="navbar__inner">
+        <a href="../index.html" class="navbar__logo" aria-label="Clarenville Dental Care - Home"><img src="../assets/images/logo.webp" alt="" class="navbar__logo-icon" width="28" height="28" />Clarenville Dental Care</a>
+        <nav class="navbar__nav" aria-label="Primary navigation">
+          <a href="about-us.html" class="navbar__link">About Us</a>
+          <a href="services.html" class="navbar__link">Services</a>
+          <a href="faq.html" class="navbar__link">FAQ</a>
+          <a href="new-patients.html" class="navbar__link">New Patients</a>
+          <a href="blog.html" class="navbar__link">Blog</a>
+          <a href="contact.html" class="navbar__link">Contact</a>
+          <a href="contact.html" class="btn btn--primary">Book Appointment</a>
+        </nav>
+        <button id="navbar-toggle" class="navbar__toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+      </div>
+    </div>
+  </header>
+  <div id="mobile-menu" class="mobile-menu"><nav class="mobile-menu__nav"><a href="../index.html" class="mobile-menu__link">Home</a><a href="about-us.html" class="mobile-menu__link">About Us</a><a href="services.html" class="mobile-menu__link">Services</a><a href="faq.html" class="mobile-menu__link">FAQ</a><a href="new-patients.html" class="mobile-menu__link">New Patients</a><a href="blog.html" class="mobile-menu__link">Blog</a><a href="contact.html" class="mobile-menu__link">Contact</a><a href="contact.html" class="btn btn--primary mobile-menu__cta">Book Appointment</a></nav></div>
+
+  <main class="cdcp-page">
+
+    <section class="section page-hero" aria-labelledby="cdcp-page-heading">
+      <div class="container">
+        <div class="page-hero__grid">
+          <div class="page-hero__content">
+            <span class="section-label">CDCP Coverage - Clarenville</span>
+            <h1 id="cdcp-page-heading" class="section-heading">CDCP dental care in Clarenville with a clearer path to booking</h1>
+            <p class="page-hero__lede">
+              Clarenville Dental Care supports patients using the Canadian Dental Care Plan and helps explain how CDCP questions fit into checkups, cleanings, treatment planning, and getting back into care.
+            </p>
+            <div class="page-hero__actions">
+              <a href="contact.html" class="btn btn--primary">Book a CDCP Visit</a>
+              <a href="https://www.canada.ca/en/services/benefits/dental/dental-care-plan/qualify.html" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">Check CDCP Eligibility</a>
+              <a href="tel:+17092000209" class="btn btn--secondary">Call (709) 200-0209</a>
+            </div>
+          </div>
+          <div class="cdcp-hero__grid" aria-label="CDCP highlights">
+            <article class="cdcp-hero__card">
+              <p class="cdcp-hero__value">Accepted</p>
+              <p class="cdcp-hero__label">A dedicated local page for patients exploring Canadian Dental Care Plan appointments.</p>
+            </article>
+            <article class="cdcp-hero__card">
+              <p class="cdcp-hero__value">Routine &amp; Restorative</p>
+              <p class="cdcp-hero__label">Useful for cleanings, exams, and broader treatment conversations when patients need direction.</p>
+            </article>
+            <article class="cdcp-hero__card">
+              <p class="cdcp-hero__value">Clarenville First</p>
+              <p class="cdcp-hero__label">Built for local intent, with practical next steps instead of generic plan wording.</p>
+            </article>
+            <article class="cdcp-hero__card">
+              <p class="cdcp-hero__value">Ask Early</p>
+              <p class="cdcp-hero__label">Calling before you guess is usually the fastest way to understand what to book next.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cdcp-eligibility" aria-labelledby="cdcp-official-eligibility-heading">
+      <div class="container">
+        <div class="cdcp-eligibility__card">
+          <div>
+            <span class="section-label">Official CDCP Eligibility Check</span>
+            <h2 id="cdcp-official-eligibility-heading" class="section-heading">Check your eligibility on the official Government of Canada CDCP page</h2>
+            <p class="section-subheading">
+              If you are still confirming whether you may qualify, use the official Government of Canada CDCP eligibility page first, then contact the clinic when you are ready to talk about your visit.
+            </p>
+          </div>
+          <div class="cdcp-eligibility__actions">
+            <a href="https://www.canada.ca/en/services/benefits/dental/dental-care-plan/qualify.html" class="btn btn--primary" target="_blank" rel="noopener noreferrer">Check CDCP Eligibility</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cdcp-intro" aria-labelledby="cdcp-explained-heading">
+      <div class="container">
+        <div class="cdcp-intro__grid">
+          <article class="cdcp-panel cdcp-panel--soft">
+            <p class="cdcp-kicker">What This Page Is For</p>
+            <h2 id="cdcp-explained-heading" class="section-heading">A better starting point for CDCP questions</h2>
+            <p>
+              Patients looking for a CDCP dentist usually want more than a simple mention of the plan. They want to know whether the clinic is a real fit, what kind of visit to book, and how to move forward without confusion.
+            </p>
+            <p>
+              This page is built to answer those first practical questions while keeping the next step toward an appointment obvious.
+            </p>
+          </article>
+          <article class="cdcp-panel">
+            <p class="cdcp-kicker">What To Bring</p>
+            <h2 class="section-heading">The most helpful details before a CDCP visit</h2>
+            <ul class="cdcp-checks">
+              <li>Your CDCP details or any related information you already have available.</li>
+              <li>A sense of whether you need a checkup, cleaning, pain assessment, or treatment consultation.</li>
+              <li>Any timing concerns if you are booking after a long gap in care or because something feels wrong now.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="cdcp-process-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">How To Start</span>
+          <h2 id="cdcp-process-heading" class="section-heading">A straightforward way to move from plan questions to care</h2>
+          <p class="section-subheading">
+            CDCP pages work best when they reduce uncertainty and make booking feel easier, not heavier.
+          </p>
+        </div>
+        <div class="cdcp-two-up">
+          <article class="cdcp-panel">
+            <h3>Start with the appointment you actually need</h3>
+            <div class="cdcp-steps">
+              <div class="cdcp-step">
+                <strong>Routine care</strong>
+                Checkups and cleanings are often the easiest starting point when you want to get established or get back on track.
+              </div>
+              <div class="cdcp-step">
+                <strong>Pain or a concern</strong>
+                If you are uncomfortable, dealing with swelling, or worried about a tooth, the dental issue itself should guide the booking conversation.
+              </div>
+              <div class="cdcp-step">
+                <strong>Treatment planning</strong>
+                When you suspect you may need more involved care, it helps to ask those questions early instead of waiting.
+              </div>
+            </div>
+          </article>
+          <article class="cdcp-panel cdcp-panel--soft">
+            <h3>What patients usually want clarified</h3>
+            <p>
+              Most people using CDCP are trying to understand how the plan connects to a real visit, not just whether a clinic mentions the acronym on a page.
+            </p>
+            <p>
+              The most common questions are whether the clinic accepts CDCP, what type of appointment makes sense to book first, and what details to have ready when calling or arriving.
+            </p>
+            <p>
+              A strong local CDCP page should lower friction, build trust, and point clearly to the next step. That is the job this page is doing.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cdcp-band" aria-labelledby="cdcp-needs-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Where CDCP Questions Show Up</span>
+          <h2 id="cdcp-needs-heading" class="section-heading">CDCP planning usually happens alongside a real dental need</h2>
+          <p class="section-subheading">
+            Patients searching for CDCP help are often also trying to solve an overdue, uncomfortable, or uncertain dental situation.
+          </p>
+        </div>
+        <div class="cdcp-two-up">
+          <article class="cdcp-mini-card">
+            <h3>Overdue cleanings and exams</h3>
+            <p>Many patients start here because they want to return to regular care with fewer unknowns around coverage.</p>
+          </article>
+          <article class="cdcp-mini-card">
+            <h3>Questions after time away from the dentist</h3>
+            <p>CDCP often becomes part of the conversation when someone has delayed care and wants a practical way back in.</p>
+          </article>
+          <article class="cdcp-mini-card">
+            <h3>Restorative or treatment planning</h3>
+            <p>Coverage questions matter more when the visit may also involve fillings, root canal discussion, or broader care decisions.</p>
+          </article>
+          <article class="cdcp-mini-card">
+            <h3>Family planning and older adults</h3>
+            <p>Clarity matters when the patient is also coordinating transportation, timing, or household care planning.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" aria-labelledby="cdcp-links-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Related Pages</span>
+          <h2 id="cdcp-links-heading" class="section-heading">Helpful next pages if you still need more context</h2>
+        </div>
+        <div class="cdcp-links">
+          <article class="cdcp-link-card">
+            <h3>Dental Insurance &amp; Coverage</h3>
+            <p>Use the broader coverage page if your question overlaps with direct billing, insurance support, or payment planning.</p>
+            <a href="dental-insurance-clarenville.html">Open coverage page</a>
+          </article>
+          <article class="cdcp-link-card">
+            <h3>New Patients</h3>
+            <p>If this will be your first visit, the new patient page explains what to expect and how the process begins.</p>
+            <a href="new-patients.html">Open new patient page</a>
+          </article>
+          <article class="cdcp-link-card">
+            <h3>Contact the Clinic</h3>
+            <p>Sometimes the best next step is asking your question directly and letting the clinic guide the booking path.</p>
+            <a href="contact.html">Open contact page</a>
+          </article>
+          <article class="cdcp-link-card">
+            <h3>CDCP Cleanings</h3>
+            <p>Go deeper on routine-care intent if you are mainly looking at cleanings and preventive maintenance.</p>
+            <a href="cdcp-cleanings-clarenville.html">Open CDCP cleanings page</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="cdcp-cta-heading">
+      <div class="container">
+        <div class="cdcp-cta">
+          <div>
+            <span class="section-label">Ready To Book?</span>
+            <h2 id="cdcp-cta-heading" class="section-heading">If you are enrolled in CDCP, the next step is a real conversation with the clinic</h2>
+            <p class="section-subheading">
+              Booking or calling is usually faster than trying to decode every plan detail alone, especially if you also need help deciding what kind of appointment makes sense.
+            </p>
+          </div>
+          <div class="cdcp-cta__actions">
+            <a href="contact.html" class="btn btn--primary">Book Appointment</a>
+            <a href="tel:+17092000209" class="btn btn--secondary">(709) 200-0209</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="section section--alt" aria-label="Clinic location map">
+    <div class="container">
+      <iframe
+        title="Clarenville Dental Care on Google Maps"
+        src="https://www.google.com/maps?q=Clarenville%20Dental%20Care%2C%20259%20Memorial%20Drive%2C%20Suite%20201%2C%20Clarenville%2C%20NL%20A5A%201R4&z=15&output=embed"
+        width="800"
+        height="600"
+        style="border:0; width:100%; min-height:420px; border-radius:16px;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </section>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-logo"><img src="../assets/images/logo.webp" alt="" class="footer__brand-logo-icon" width="22" height="22" />Clarenville Dental Care</div>
+          <address class="footer__address">259 Memorial Dr<br/>Clarenville, NL A5A 1R4<br/><a href="tel:+17092000209">(709) 200-0209</a><br/><a href="mailto:clarenville.dental@gmail.com">clarenville.dental@gmail.com</a></address>
+          <p class="footer__seo-copy">Local family, emergency, and cosmetic dentist in Clarenville, NL proudly serving Clarenville, Shoal Harbour, Milton, Georges Brook, Deep Bight, Port Blandford, Swift Current, Arnold's Cove, Sunnyside, and nearby communities.</p>
+        </div>
+        <div>
+          <h3 class="footer__col-heading">CDCP Services</h3>
+          <ul class="footer__links">
+            <li><a href="cdcp-cleanings-clarenville.html" class="footer__link">CDCP Cleanings</a></li>
+            <li><a href="cdcp-root-canal-clarenville.html" class="footer__link">CDCP Root Canal</a></li>
+            <li><a href="dental-cleanings.html" class="footer__link">Dental Cleanings</a></li>
+            <li><a href="preventive-dentistry.html" class="footer__link">Preventive Dentistry</a></li>
+            <li><a href="dental-insurance-clarenville.html" class="footer__link">Dental Insurance</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__col-heading">Explore</h3>
+          <ul class="footer__links">
+            <li><a href="about-us.html" class="footer__link">About Us</a></li>
+            <li><a href="faq.html" class="footer__link">FAQ</a></li>
+            <li><a href="new-patients.html" class="footer__link">New Patients</a></li>
+            <li><a href="blog.html" class="footer__link">Dental Blog</a></li>
+            <li><a href="contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__col-heading">Areas Served</h3>
+          <ul class="footer__links">
+            <li><span class="footer__link">Clarenville</span></li>
+            <li><span class="footer__link">Shoal Harbour</span></li>
+            <li><span class="footer__link">Milton</span></li>
+            <li><span class="footer__link">Port Blandford</span></li>
+            <li><span class="footer__link">Swift Current</span></li>
+            <li><span class="footer__link">Arnold's Cove</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 Clarenville Dental Care. All rights reserved.</p>
+        <nav class="footer__legal" aria-label="Legal links">
+          <a href="privacy-policy.html" class="footer__legal-link">Privacy Policy</a>
+          <a href="terms-of-service.html" class="footer__legal-link">Terms of Service</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-cta" role="region" aria-label="Quick contact actions">
+    <a href="tel:+17092000209" class="btn btn--secondary mobile-cta__phone">Call</a>
+    <a href="contact.html" class="btn btn--primary">Book Appointment</a>
+  </div>
+
+  <script type="module">
+    import { initNavigation } from '../js/navigation.js';
+    import { initFAQ } from '../js/faq.js';
+    import { initServicePageEnhancements } from '../js/service-page-enhancements.js';
+    document.addEventListener('DOMContentLoaded', () => {
+      initNavigation();
+      initFAQ();
+      initServicePageEnhancements();
+    });
+  </script>
+
+</body>
+</html>

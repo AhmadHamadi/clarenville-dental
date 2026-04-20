@@ -6,7 +6,7 @@
  * Requires a local HTTP server (e.g. VS Code Live Server) –
  * fetch() does not work on the file:// protocol.
  *
- * Hamilton Care Dental
+ * Clarenville Dental Care
  */
 
 import { initNavigation } from './navigation.js';
@@ -18,7 +18,6 @@ const COMPONENTS = {
   'c-hero'     : 'components/hero.html',
   'c-services' : 'components/services.html',
   'c-reviews'  : 'components/reviews.html',
-  'c-faq'      : 'components/faq.html',
   'c-footer'   : 'components/footer.html',
 };
 
@@ -44,7 +43,7 @@ function initApptForm() {
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-    window.location.href = 'pages/contact.html#book-form';
+    window.location.href = 'pages/contact.html';
   });
 }
 

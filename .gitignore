@@ -1,0 +1,7 @@
+node_modules/
+*.log
+dental-site/dev-server.log
+dental-site/dev-server-error.log
+dental-site/tmp_write_test.txt
+.DS_Store
+Thumbs.db

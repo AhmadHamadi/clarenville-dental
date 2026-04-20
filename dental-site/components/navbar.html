@@ -21,12 +21,12 @@
             (709) 200-0209
           </a>
           <span class="topbar__sep" aria-hidden="true">|</span>
-          <a href="mailto:info@clarenvilledental.com" class="topbar__link topbar__link--hide-sm">
+          <a href="mailto:clarenville.dental@gmail.com" class="topbar__link topbar__link--hide-sm">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
               <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
               <polyline points="22,6 12,13 2,6"/>
             </svg>
-            info@clarenvilledental.com
+            clarenville.dental@gmail.com
           </a>
           <span class="topbar__sep topbar__link--hide-sm" aria-hidden="true">|</span>
           <span class="topbar__hours">Mon-Fri 8am-6pm | Sat 9am-3pm</span>
@@ -41,11 +41,40 @@
           <img src="assets/images/logo.webp" alt="Clarenville Dental Care logo" class="navbar__logo-icon" width="78" height="78" />
         </a>
         <nav class="navbar__nav" aria-label="Primary navigation">
-          <a href="/#services" class="navbar__link">Services</a>
-          <a href="/#reviews" class="navbar__link">Reviews</a>
-          <a href="/#contact" class="navbar__link">Contact</a>
-          <a href="pages/insurance.html" class="navbar__link">Insurance</a>
-          <a href="pages/contact.html#book-form" class="btn btn--primary">Contact Us</a>
+          <a href="/" class="navbar__link">Home</a>
+          <a href="pages/about-us.html" class="navbar__link">About Us</a>
+          <div class="nav-dropdown">
+            <div class="nav-dropdown__trigger">
+              <a href="pages/services.html" class="navbar__link nav-dropdown__link">Services</a>
+              <button type="button" class="nav-dropdown__toggle" aria-expanded="false" aria-haspopup="true" aria-label="Open services menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+            </div>
+            <div class="nav-dropdown__menu" role="menu" aria-label="Services submenu">
+              <a href="pages/services.html" class="nav-dropdown__item">All Services</a>
+              <a href="pages/emergency-dentist.html" class="nav-dropdown__item">Emergency Dentist</a>
+              <a href="pages/family-dentistry.html" class="nav-dropdown__item">Family Dentistry</a>
+              <a href="pages/dental-cleanings.html" class="nav-dropdown__item">Dental Cleanings</a>
+              <a href="pages/preventive-dentistry.html" class="nav-dropdown__item">Preventive Dentistry</a>
+              <a href="pages/tooth-colored-fillings.html" class="nav-dropdown__item">Tooth-Colored Fillings</a>
+              <a href="pages/dental-crowns-and-bridges.html" class="nav-dropdown__item">Crowns and Bridges</a>
+              <a href="pages/invisalign.html" class="nav-dropdown__item">Invisalign</a>
+              <a href="pages/dental-implants.html" class="nav-dropdown__item">Dental Implants</a>
+              <a href="pages/dentures.html" class="nav-dropdown__item">Dentures</a>
+              <a href="pages/root-canal-treatment.html" class="nav-dropdown__item">Root Canal Treatment</a>
+              <a href="pages/wisdom-teeth-removal.html" class="nav-dropdown__item">Wisdom Teeth Removal</a>
+              <a href="pages/cosmetic-dentistry.html" class="nav-dropdown__item">Cosmetic Dentistry</a>
+              <a href="pages/teeth-whitening.html" class="nav-dropdown__item">Teeth Whitening</a>
+              <a href="pages/dental-insurance-clarenville.html" class="nav-dropdown__item">Insurance and CDCP</a>
+            </div>
+          </div>
+          <a href="pages/faq.html" class="navbar__link">FAQ</a>
+          <a href="pages/new-patients.html" class="navbar__link">New Patients</a>
+          <a href="pages/blog.html" class="navbar__link">Blog</a>
+          <a href="pages/contact.html" class="navbar__link">Contact</a>
+          <a href="pages/contact.html" class="btn btn--primary">Book Appointment</a>
         </nav>
         <button id="navbar-toggle" class="navbar__toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
@@ -58,15 +87,41 @@
     </div>
     <div id="mobile-menu" class="mobile-menu" aria-label="Mobile navigation">
       <nav class="mobile-menu__nav">
-        <a href="/#services" class="mobile-menu__link">Services</a>
-        <a href="/#reviews" class="mobile-menu__link">Reviews</a>
-        <a href="/#contact" class="mobile-menu__link">Contact</a>
-        <a href="pages/insurance.html" class="mobile-menu__link">Insurance</a>
-        <a href="pages/contact.html#book-form" class="btn btn--primary mobile-menu__cta">Contact Us</a>
+        <a href="/" class="mobile-menu__link">Home</a>
+        <a href="pages/about-us.html" class="mobile-menu__link">About Us</a>
+        <div class="mobile-submenu">
+          <div class="mobile-submenu__header">
+            <a href="pages/services.html" class="mobile-menu__link mobile-submenu__link">Services</a>
+            <button type="button" class="mobile-submenu__toggle" aria-expanded="false" aria-label="Toggle services menu">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+          </div>
+          <div class="mobile-submenu__panel">
+            <a href="pages/services.html" class="mobile-submenu__item">All Services</a>
+            <a href="pages/emergency-dentist.html" class="mobile-submenu__item">Emergency Dentist</a>
+            <a href="pages/family-dentistry.html" class="mobile-submenu__item">Family Dentistry</a>
+            <a href="pages/dental-cleanings.html" class="mobile-submenu__item">Dental Cleanings</a>
+            <a href="pages/preventive-dentistry.html" class="mobile-submenu__item">Preventive Dentistry</a>
+            <a href="pages/tooth-colored-fillings.html" class="mobile-submenu__item">Tooth-Colored Fillings</a>
+            <a href="pages/dental-crowns-and-bridges.html" class="mobile-submenu__item">Crowns and Bridges</a>
+            <a href="pages/invisalign.html" class="mobile-submenu__item">Invisalign</a>
+            <a href="pages/dental-implants.html" class="mobile-submenu__item">Dental Implants</a>
+            <a href="pages/dentures.html" class="mobile-submenu__item">Dentures</a>
+            <a href="pages/root-canal-treatment.html" class="mobile-submenu__item">Root Canal Treatment</a>
+            <a href="pages/wisdom-teeth-removal.html" class="mobile-submenu__item">Wisdom Teeth Removal</a>
+            <a href="pages/cosmetic-dentistry.html" class="mobile-submenu__item">Cosmetic Dentistry</a>
+            <a href="pages/teeth-whitening.html" class="mobile-submenu__item">Teeth Whitening</a>
+            <a href="pages/dental-insurance-clarenville.html" class="mobile-submenu__item">Insurance and CDCP</a>
+          </div>
+        </div>
+        <a href="pages/faq.html" class="mobile-menu__link">FAQ</a>
+        <a href="pages/new-patients.html" class="mobile-menu__link">New Patients</a>
+        <a href="pages/blog.html" class="mobile-menu__link">Blog</a>
+        <a href="pages/contact.html" class="mobile-menu__link">Contact</a>
+        <a href="pages/contact.html" class="btn btn--primary mobile-menu__cta">Book Appointment</a>
       </nav>
     </div>
   </header>
 </div>
-
-
-
