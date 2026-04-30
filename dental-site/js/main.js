@@ -43,7 +43,7 @@ function initApptForm() {
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-    window.location.href = 'pages/contact.html';
+    window.location.href = '/contact';
   });
 }
 

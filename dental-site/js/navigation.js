@@ -89,6 +89,7 @@ export function initNavigation() {
   _ensureSiteStructuredData();
   _ensureHomeLinks();
   _enhanceServiceDropdown();
+  _ensureCleanNavLinks();
   _ensurePhoneCtas();
   _initMobileMenu();
   _initSmoothScroll();
@@ -395,12 +396,29 @@ function _bindMobileDropdownBehavior() {
 }
 
 function _resolvePageHref(pageHref) {
-  if (pageHref.startsWith('http') || pageHref.startsWith('/') || pageHref.startsWith('#')) {
+  if (
+    pageHref.startsWith('http') ||
+    pageHref.startsWith('/') ||
+    pageHref.startsWith('#') ||
+    pageHref.startsWith('tel:') ||
+    pageHref.startsWith('mailto:')
+  ) {
     return pageHref;
   }
-  const [path, hash] = pageHref.split('#');
+  const withoutPages = pageHref.replace(/^pages\//, '');
+  const [path, hash] = withoutPages.split('#');
   const slug = path.replace(/\.html$/, '');
+  if (!slug) return pageHref;
   return hash ? `/${slug}#${hash}` : `/${slug}`;
+}
+
+function _ensureCleanNavLinks() {
+  document.querySelectorAll('.navbar__nav a, .mobile-menu__nav a').forEach((link) => {
+    const href = link.getAttribute('href');
+    if (!href) return;
+    const clean = _resolvePageHref(href);
+    if (clean !== href) link.setAttribute('href', clean);
+  });
 }
 
 function _buildDesktopServicesMenuMarkup() {
