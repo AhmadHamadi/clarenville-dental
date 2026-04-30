@@ -1,9 +1,9 @@
 {
   "redirects": [
-    { "source": "/dental-site/index.html", "destination": "/", "permanent": true },
-    { "source": "/dental-site/pages/:slug.html", "destination": "/:slug", "permanent": true },
-    { "source": "/pages/:slug.html", "destination": "/:slug", "permanent": true },
-    { "source": "/:slug.html", "destination": "/:slug", "permanent": true }
+    { "source": "/dental-site/index.html", "destination": "/", "permanent": false },
+    { "source": "/dental-site/pages/:slug.html", "destination": "/:slug", "permanent": false },
+    { "source": "/pages/:slug.html", "destination": "/:slug", "permanent": false },
+    { "source": "/:slug.html", "destination": "/:slug", "permanent": false }
   ],
   "rewrites": [
     { "source": "/", "destination": "/dental-site/index.html" },
