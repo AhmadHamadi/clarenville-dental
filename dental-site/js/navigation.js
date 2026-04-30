@@ -164,8 +164,7 @@ function _ensureSiteStructuredData() {
 }
 
 function _ensureHomeLinks() {
-  const isNestedPage = window.location.pathname.includes("/pages/");
-  const homeHref = isNestedPage ? "../index.html" : "/";
+  const homeHref = '/';
 
   const desktopNav = document.querySelector(".navbar__nav");
   if (desktopNav && !desktopNav.querySelector('a[href="/"], a[href="../index.html"], a[href="index.html"]')) {
@@ -396,8 +395,12 @@ function _bindMobileDropdownBehavior() {
 }
 
 function _resolvePageHref(pageHref) {
-  const isNestedPage = window.location.pathname.includes("/pages/");
-  return isNestedPage ? pageHref : `pages/${pageHref}`;
+  if (pageHref.startsWith('http') || pageHref.startsWith('/') || pageHref.startsWith('#')) {
+    return pageHref;
+  }
+  const [path, hash] = pageHref.split('#');
+  const slug = path.replace(/\.html$/, '');
+  return hash ? `/${slug}#${hash}` : `/${slug}`;
 }
 
 function _buildDesktopServicesMenuMarkup() {
