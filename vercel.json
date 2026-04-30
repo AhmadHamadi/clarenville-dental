@@ -1,9 +1,4 @@
 {
-  "redirects": [
-    { "source": "/dental-site/index.html", "destination": "/", "permanent": true },
-    { "source": "/dental-site/pages/:slug.html", "destination": "/:slug", "permanent": true },
-    { "source": "/:slug.html", "destination": "/:slug", "permanent": true }
-  ],
   "rewrites": [
     { "source": "/", "destination": "/dental-site/index.html" },
     { "source": "/robots.txt", "destination": "/dental-site/robots.txt" },
