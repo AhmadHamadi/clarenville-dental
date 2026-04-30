@@ -1,9 +1,4 @@
 {
-  "functions": {
-    "api/contact.js": {
-      "runtime": "nodejs20.x"
-    }
-  },
   "redirects": [
     { "source": "/dental-site/index.html", "destination": "/", "permanent": true },
     { "source": "/dental-site/pages/:slug.html", "destination": "/:slug", "permanent": true },
