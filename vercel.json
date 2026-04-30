@@ -1,10 +1,18 @@
 {
+  "functions": {
+    "api/contact.js": {
+      "runtime": "nodejs20.x"
+    }
+  },
   "rewrites": [
     { "source": "/", "destination": "/dental-site/index.html" },
+    { "source": "/robots.txt", "destination": "/dental-site/robots.txt" },
+    { "source": "/sitemap.xml", "destination": "/dental-site/sitemap.xml" },
     { "source": "/css/:path*", "destination": "/dental-site/css/:path*" },
     { "source": "/js/:path*", "destination": "/dental-site/js/:path*" },
     { "source": "/components/:path*", "destination": "/dental-site/components/:path*" },
     { "source": "/pages/:path*", "destination": "/dental-site/pages/:path*" },
-    { "source": "/assets/:path*", "destination": "/dental-site/assets/:path*" }
+    { "source": "/assets/:path*", "destination": "/dental-site/assets/:path*" },
+    { "source": "/:slug", "destination": "/dental-site/pages/:slug.html" }
   ]
 }

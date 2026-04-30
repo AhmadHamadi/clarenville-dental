@@ -86,11 +86,81 @@ const SERVICE_LINKS = [
 ];
 
 export function initNavigation() {
+  _ensureSiteStructuredData();
   _ensureHomeLinks();
   _enhanceServiceDropdown();
   _ensurePhoneCtas();
   _initMobileMenu();
   _initSmoothScroll();
+}
+
+function _ensureSiteStructuredData() {
+  const head = document.head;
+  if (!head) return;
+
+  const robots = document.querySelector('meta[name="robots"]')?.getAttribute("content")?.toLowerCase() ?? "";
+  if (robots.includes("noindex")) return;
+
+  if (document.getElementById("site-dentist-schema")) return;
+  if (head.textContent?.includes('"@type": "Dentist"') || head.textContent?.includes('"@type":"Dentist"')) return;
+
+  const canonicalHref =
+    document.querySelector('link[rel="canonical"]')?.getAttribute("href") ||
+    window.location.href;
+
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "@id": "https://clarenvilledental.com/#dentist",
+    name: "Clarenville Dental Care",
+    url: "https://clarenvilledental.com/",
+    image: "https://clarenvilledental.com/assets/images/logo.webp",
+    telephone: "+1-709-200-0209",
+    email: "clarenville.dental@gmail.com",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "259 Memorial Drive, Suite 201",
+      addressLocality: "Clarenville",
+      addressRegion: "NL",
+      postalCode: "A5A 1R4",
+      addressCountry: "CA",
+    },
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "08:00",
+        closes: "18:00",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: "Saturday",
+        opens: "09:00",
+        closes: "15:00",
+      },
+    ],
+    areaServed: [
+      "Clarenville",
+      "Shoal Harbour",
+      "Milton",
+      "Georges Brook",
+      "Deep Bight",
+      "Port Blandford",
+      "Swift Current",
+      "Arnold's Cove",
+      "Sunnyside",
+    ].map((name) => ({
+      "@type": "City",
+      name,
+    })),
+    mainEntityOfPage: canonicalHref,
+  };
+
+  const script = document.createElement("script");
+  script.type = "application/ld+json";
+  script.id = "site-dentist-schema";
+  script.textContent = JSON.stringify(schema);
+  head.appendChild(script);
 }
 
 function _ensureHomeLinks() {

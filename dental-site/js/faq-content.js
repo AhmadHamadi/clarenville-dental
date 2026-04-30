@@ -10,17 +10,6 @@ export const FAQ_CONTENT = {
       { question: "What should I do after reading the about page if I like what I see?", answer: "The simplest next step is to request an appointment or call the clinic. If you still want more detail first, the services page, FAQ page, and new-patient page are the most useful follow-up reads." }
     ]
   },
-  "contact.html": {
-    sectionTitle: "Appointment request FAQ",
-    sectionSubtitle: "Useful pre-booking questions for patients who are ready to schedule the next step.",
-    items: [
-      { question: "What kinds of visits can I request from this page?", answer: "This page can be used for routine exams, cleanings, emergency assessments, cosmetic consultations, Invisalign questions, implant planning, and first visits as a new patient." },
-      { question: "Should I call instead of waiting for a reply to the form?", answer: "Yes, especially if you have pain, swelling, a broken tooth, trauma, or another issue that feels urgent. Calling is the fastest path when timing matters." },
-      { question: "What information helps the clinic schedule the right appointment type?", answer: "It helps to include your main concern, how urgent it feels, whether you are a new or returning patient, and any preferred days or times that matter for your schedule." },
-      { question: "Can I request an appointment even if I am not sure which service page fits me?", answer: "Yes. You do not need to know the exact treatment name before reaching out. A short description of what is bothering you is usually enough for the clinic to guide the next step." },
-      { question: "What should I do after I submit an appointment request?", answer: "Keep an eye on your phone and email in case the clinic needs clarification. If your situation changes or becomes more urgent, call the office directly instead of waiting." }
-    ]
-  },
   "blog.html": {
     sectionTitle: "Dental blog FAQ",
     sectionSubtitle: "Questions readers ask when they are using articles to figure out what to do next.",
@@ -152,8 +141,19 @@ export const FAQ_CONTENT = {
       { question: "Can children and adults see the same dentist at the same clinic?", answer: "Yes. Family dental care is designed so that patients of different ages and stages can all be seen in one practice. That means one set of records, familiar staff, and no need to find a separate pediatric dentist for younger family members while adults go elsewhere." },
       { question: "What age should children start seeing a dentist?", answer: "The general guidance is around age one or when the first tooth appears, whichever comes first. Early visits help children get comfortable with the dental environment and allow any developing concerns to be caught and monitored early." },
       { question: "What does a routine family dental visit include?", answer: "A typical visit includes a clinical exam, a professional cleaning to remove plaque and tartar, X-rays when clinically appropriate, and a discussion of anything the dentist wants to monitor or address." },
-      { question: "Can all family members be seen at the same clinic?", answer: "Yes. Family dental care is designed to support patients of different ages and stages in one place, which makes scheduling and ongoing care more consistent for households." },
+      { question: "Why do families choose one clinic for both routine and urgent care?", answer: "A family-focused clinic makes scheduling easier and gives the household one familiar place to call whether the need is a routine checkup, a child’s first visit, a filling, or an urgent tooth problem." },
       { question: "How do I know when it is time to book for a family member?", answer: "Pain, visible changes, a tooth concern, or simply being more than a year past the last visit are all good enough reasons to book. When in doubt, scheduling a checkup is almost always the right call." }
+    ]
+  },
+  "services.html": {
+    sectionTitle: "Services page FAQ",
+    sectionSubtitle: "Quick guidance for patients who are comparing treatment pages and trying to choose the right next step without guessing.",
+    items: [
+      { question: "What is the fastest way to choose the right page if I have pain?", answer: "If the issue is painful, swollen, broken, or feels urgent, start with the emergency dentist page first. That path is designed for problems where timing matters more than perfect treatment naming." },
+      { question: "Should I start with family dentistry or preventive dentistry for a routine visit?", answer: "Family dentistry is usually the better starting point when you want general ongoing care for yourself or your household. Preventive dentistry is more useful when you are specifically comparing cleanings, exams, X-rays, fluoride, sealants, and gum-health prevention." },
+      { question: "What if I think I might need implants, dentures, or a crown but I am not sure?", answer: "Use the services page to compare the restorative options, then contact the clinic if you are still weighing more than one treatment path. Patients do not need to self-diagnose before booking." },
+      { question: "Why are there separate pages for emergency care, cosmetic care, and routine care?", answer: "Each page is designed around a different patient intent. That keeps the site clearer for both patients and search engines and reduces the chance of thin duplicate pages competing with each other." },
+      { question: "What should I do after I find the service page that sounds most like my situation?", answer: "Read the core page, then either request an appointment or call the clinic. If the concern changes or starts to feel more urgent, switch to the emergency path rather than staying in research mode." }
     ]
   },
   "dental-implants.html": {
@@ -330,17 +330,6 @@ export const FAQ_CONTENT = {
       { question: "Can old metal fillings be replaced with tooth-coloured composite?", answer: "Yes, in many cases. Old amalgam fillings that are worn, cracked, or leaking can often be removed and replaced with composite. Whether replacement is appropriate depends on the condition of the existing filling and the amount of remaining healthy tooth structure. Replacing fillings purely for cosmetic reasons when the existing filling is still sound is not always recommended." },
       { question: "Will a filling hurt?", answer: "The area is numbed with local anaesthesia before treatment begins, so discomfort during the procedure is minimal. Some sensitivity to temperature or pressure for a few days afterward is normal and usually resolves on its own. If the sensitivity is sharp, increasing, or persists beyond a week, call the clinic so the bite and margins can be checked." },
       { question: "How do I know if I have a cavity that needs a filling?", answer: "Cavities are often found during routine exams and X-rays before they cause any noticeable symptoms — which is one reason regular checkups matter. Symptoms that can indicate a cavity include a toothache, sensitivity to sweets or temperature, a visible dark spot or hole in the tooth, or food that keeps getting stuck in the same place. An exam is the only accurate way to confirm." }
-    ]
-  },
-  "services.html": {
-    sectionTitle: "Services hub FAQ",
-    sectionSubtitle: "Use these questions if you are choosing where to start and do not want to book the wrong kind of visit.",
-    items: [
-      { question: "What if I have more than one concern at once?", answer: "Choose the issue that feels most urgent or most important right now. Pain usually points to the emergency page, routine maintenance points to family or cleaning care, and smile or tooth-replacement goals point to cosmetic, Invisalign, implants, or restorative pages." },
-      { question: "How should I choose between a treatment page and a support page?", answer: "Treatment pages explain one specific kind of care. Support pages answer practical questions around that care, such as insurance, CDCP, technology, first visits, or who you will meet at the clinic." },
-      { question: "What is the best page to start with if I am not sure what I need yet?", answer: "If the issue hurts, start with emergency dentistry. If it is routine care, start with family dentistry or cleanings. If it is cosmetic or replacement-related, start with Invisalign, implants, or cosmetic dentistry." },
-      { question: "Why are there so many focused service pages instead of one long list?", answer: "Because patients usually search with one main intent. Focused pages make it easier to answer the actual question someone has without forcing them through unrelated treatments first." },
-      { question: "What should I do after finding the service page that matches my concern?", answer: "Book an appointment or call the clinic. The right page should reduce confusion, but the next real step is still direct contact." }
     ]
   }
 };

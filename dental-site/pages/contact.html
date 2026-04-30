@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Contact Clarenville Dental Care in Clarenville, NL for directions, phone-first booking help, and appointment requests for family, emergency, Invisalign, implant, and preventive dental care." />
+  <meta name="description" content="Contact Clarenville Dental Care in Clarenville, NL for directions, phone booking help, and appointment requests for family, emergency, and preventive dental care." />
   <title>Contact Clarenville Dental Care | Dentist in Clarenville, NL</title>
   <link rel="canonical" href="https://clarenvilledental.com/contact" />
   <meta property="og:type" content="website" />
@@ -201,6 +201,14 @@
           <form id="book-form" novalidate aria-labelledby="form-heading">
             <h2 id="form-heading" class="section-heading form-heading--sm">Request an Appointment</h2>
 
+            <div id="form-success" role="alert" style="display:none;background:#f0fdf4;border:1px solid #86efac;border-radius:0.75rem;padding:1.25rem 1.5rem;margin-bottom:1.5rem;">
+              <p style="margin:0;font-weight:600;color:#166534;">Request sent — thank you!</p>
+              <p style="margin:0.25rem 0 0;color:#166534;font-size:0.9rem;">We will call you within 1 business hour to confirm. For emergencies call <a href="tel:+17092000209" style="color:inherit;">(709) 200-0209</a>.</p>
+            </div>
+            <div id="form-error" role="alert" style="display:none;background:#fef2f2;border:1px solid #fca5a5;border-radius:0.75rem;padding:1.25rem 1.5rem;margin-bottom:1.5rem;">
+              <p style="margin:0;font-weight:600;color:#991b1b;">Something went wrong — please try again or call us directly.</p>
+            </div>
+
             <div class="form-grid">
 
               <div class="form-group">
@@ -253,7 +261,7 @@
               </div>
 
               <div class="form-group form-group--full">
-                <button type="submit" class="btn btn--primary btn--block">
+                <button type="submit" id="form-submit-btn" class="btn btn--primary btn--block">
                   Request Appointment
                 </button>
                 <p class="form-note">
@@ -390,12 +398,45 @@
   <script type="module">
     import { initNavigation } from '../js/navigation.js';
     import { initFAQ } from '../js/faq.js';
-    document.addEventListener('DOMContentLoaded', () => { initNavigation(); initFAQ(); });
+    document.addEventListener('DOMContentLoaded', () => {
+      initNavigation();
+      initFAQ();
+
+      const form = document.getElementById('book-form');
+      const submitBtn = document.getElementById('form-submit-btn');
+      const successMsg = document.getElementById('form-success');
+      const errorMsg = document.getElementById('form-error');
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        successMsg.style.display = 'none';
+        errorMsg.style.display = 'none';
+
+        const data = Object.fromEntries(new FormData(form));
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending…';
+
+        try {
+          const res = await fetch('/api/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data),
+          });
+          if (!res.ok) throw new Error('Server error');
+          successMsg.style.display = 'block';
+          form.reset();
+        } catch {
+          errorMsg.style.display = 'block';
+        } finally {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Request Appointment';
+        }
+      });
+    });
   </script>
 
 </body>
 </html>
-
 
 
 

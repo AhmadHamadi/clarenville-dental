@@ -14,7 +14,7 @@
 | Phone | (709) 200-0209 |
 | Email | clarenville.dental@gmail.com |
 | Hours | Mon–Fri 8am–6pm, Sat 9am–3pm |
-| Rating | 4.9 stars / 300+ reviews |
+| Rating | 4.9 stars / 90+ reviews |
 | CDCP | Accepted |
 | New Patients | Yes |
 | Same-Day | Yes |

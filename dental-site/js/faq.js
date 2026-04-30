@@ -2,6 +2,7 @@ import { FAQ_CONTENT } from './faq-content.js';
 
 export function initFAQ() {
   _renderPageFaq();
+  _syncFaqStructuredData();
 
   const accordions = document.querySelectorAll('.accordion');
   if (!accordions.length) return;
@@ -127,6 +128,45 @@ function _buildAccordionMarkup(prefix, items) {
       </div>
     `;
   }).join('');
+}
+
+function _syncFaqStructuredData() {
+  const pageName = window.location.pathname.split('/').pop();
+  if (!pageName || pageName === 'privacy-policy.html' || pageName === 'terms-of-service.html') {
+    return;
+  }
+
+  const config = FAQ_CONTENT[pageName] ?? _buildFallbackFaq(pageName);
+  if (!config?.items?.length) return;
+
+  const existing = document.getElementById('faq-structured-data');
+  existing?.remove();
+
+  const hasStaticFaqSchema = Array.from(document.querySelectorAll('script[type="application/ld+json"]'))
+    .some((script) => {
+      const text = script.textContent ?? '';
+      return script.id !== 'faq-structured-data' && (text.includes('"@type": "FAQPage"') || text.includes('"@type":"FAQPage"'));
+    });
+  if (hasStaticFaqSchema) return;
+
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: config.items.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.answer,
+      },
+    })),
+  };
+
+  const script = document.createElement('script');
+  script.type = 'application/ld+json';
+  script.id = 'faq-structured-data';
+  script.textContent = JSON.stringify(schema);
+  document.head.appendChild(script);
 }
 
 function _toggleItem(btn, allButtons) {

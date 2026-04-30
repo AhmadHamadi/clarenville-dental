@@ -1,0 +1,64 @@
+# Clarenville Dental Care
+
+> Clarenville Dental Care is a dental clinic in Clarenville, Newfoundland and Labrador, Canada.
+> This website helps patients learn about services, new-patient information, contact options, CDCP acceptance, and practical dental education.
+
+## Canonical Site
+
+- https://clarenvilledental.com/
+
+## Primary Pages
+
+- Homepage: https://clarenvilledental.com/
+- Services: https://clarenvilledental.com/services
+- About Us: https://clarenvilledental.com/about-us
+- New Patients: https://clarenvilledental.com/new-patients
+- FAQ: https://clarenvilledental.com/faq
+- Contact: https://clarenvilledental.com/contact
+- CDCP: https://clarenvilledental.com/cdcp-dentist-clarenville
+- Blog: https://clarenvilledental.com/blog
+
+## Key Service Pages
+
+- Emergency Dentist: https://clarenvilledental.com/emergency-dentist
+- Family Dentistry: https://clarenvilledental.com/family-dentistry
+- Dental Cleanings: https://clarenvilledental.com/dental-cleanings
+- Dental Implants: https://clarenvilledental.com/dental-implants
+- Invisalign: https://clarenvilledental.com/invisalign
+- Root Canal Treatment: https://clarenvilledental.com/root-canal-treatment
+- Cosmetic Dentistry: https://clarenvilledental.com/cosmetic-dentistry
+- Wisdom Teeth Removal: https://clarenvilledental.com/wisdom-teeth-removal
+
+## Clinic Facts
+
+- Brand: Clarenville Dental Care
+- Address: 259 Memorial Drive, Suite 201, Clarenville, NL A5A 1R4
+- Phone: (709) 200-0209
+- Email: clarenville.dental@gmail.com
+- Hours: Monday to Friday 8:00 AM to 6:00 PM, Saturday 9:00 AM to 3:00 PM
+- CDCP: Accepted
+
+## Areas Served
+
+- Clarenville
+- Shoal Harbour
+- Milton
+- Georges Brook
+- Deep Bight
+- Port Blandford
+- Swift Current
+- Arnold's Cove
+- Sunnyside
+
+## Preferred Content For Citation
+
+- Service pages with direct patient guidance
+- New patient information
+- CDCP page
+- FAQ page
+- Blog articles with practical dental education
+
+## Lower-Priority Utility Pages
+
+- Privacy Policy
+- Terms of Service
