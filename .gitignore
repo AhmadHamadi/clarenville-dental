@@ -1,7 +1,11 @@
 node_modules/
 *.log
-dental-site/dev-server.log
-dental-site/dev-server-error.log
-dental-site/tmp_write_test.txt
+tmp_write_test.txt
+source-images/
 .DS_Store
 Thumbs.db
+*-review.png
+homepage-*.png
+about-us-*.png
+about-team-*.png
+

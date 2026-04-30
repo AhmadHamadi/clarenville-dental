@@ -1,18 +1,12 @@
 {
   "trailingSlash": false,
   "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": false },
+    { "source": "/:slug.html", "destination": "/:slug", "permanent": false },
     { "source": "/pages/:slug.html", "destination": "/:slug", "permanent": false },
-    { "source": "/pages/:slug", "destination": "/:slug", "permanent": false },
-    { "source": "/:slug.html", "destination": "/:slug", "permanent": false }
+    { "source": "/pages/:slug", "destination": "/:slug", "permanent": false }
   ],
   "rewrites": [
-    { "source": "/", "destination": "/dental-site/index.html" },
-    { "source": "/robots.txt", "destination": "/dental-site/robots.txt" },
-    { "source": "/sitemap.xml", "destination": "/dental-site/sitemap.xml" },
-    { "source": "/css/:path*", "destination": "/dental-site/css/:path*" },
-    { "source": "/js/:path*", "destination": "/dental-site/js/:path*" },
-    { "source": "/components/:path*", "destination": "/dental-site/components/:path*" },
-    { "source": "/assets/:path*", "destination": "/dental-site/assets/:path*" },
-    { "source": "/:slug", "destination": "/dental-site/pages/:slug.html" }
+    { "source": "/:slug", "destination": "/pages/:slug.html" }
   ]
 }
