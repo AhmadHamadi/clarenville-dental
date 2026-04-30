@@ -1,3 +1,21 @@
+function cleanHref(href) {
+  if (!href) return href;
+  if (
+    href.startsWith('http') ||
+    href.startsWith('/') ||
+    href.startsWith('#') ||
+    href.startsWith('tel:') ||
+    href.startsWith('mailto:')
+  ) {
+    return href;
+  }
+  const withoutPages = href.replace(/^pages\//, '');
+  const [path, hash] = withoutPages.split('#');
+  const slug = path.replace(/\.html$/, '');
+  if (!slug) return href;
+  return hash ? `/${slug}#${hash}` : `/${slug}`;
+}
+
 const PAGE_CONFIG = {
   "about-us.html": {
     image: {
@@ -593,7 +611,7 @@ function enhanceRelatedLinks(config) {
 
   config.links.forEach((link) => {
     const anchor = document.createElement("a");
-    anchor.href = link.href;
+    anchor.href = cleanHref(link.href);
     anchor.className = "related-link-pill";
     anchor.textContent = link.label;
     linksContainer.appendChild(anchor);
@@ -772,7 +790,7 @@ function buildPathwayCopy(config, context) {
   const cards = (config?.links || []).slice(0, 3).map((link) => ({
     title: link.label,
     text: `If your questions overlap with ${link.label.toLowerCase()}, this is one of the most useful follow-up pages to review before booking.`,
-    href: link.href,
+    href: cleanHref(link.href),
   }));
 
   if (!cards.length) {
@@ -890,7 +908,7 @@ function removeGenericPageFaqSection() {
 function buildLinkPills(links) {
   return (links || [])
       .slice(0, 4)
-      .map((link) => `<a href="${link.href}" class="related-link-pill">${link.label}</a>`)
+      .map((link) => `<a href="${cleanHref(link.href)}" class="related-link-pill">${link.label}</a>`)
       .join("");
 }
 
@@ -911,7 +929,7 @@ function buildServiceIntroSection(config, context, family, pageName) {
       <div class="service-intro">
         <div class="service-intro__grid">
           <div class="service-intro__copy">
-            <a href="services.html" class="service-intro__back" aria-label="Back to services">
+            <a href="/services" class="service-intro__back" aria-label="Back to services">
               <span aria-hidden="true">&larr;</span>
               <span>Back to services</span>
             </a>
@@ -1735,7 +1753,7 @@ function buildPathwaysSection(config, context) {
                 <span class="jump-card__eyebrow">Related Page</span>
                 <h3 class="jump-card__title">${card.title}</h3>
                 <p class="resource-card__text">${card.text}</p>
-                <a href="${card.href}" class="resource-card__link">Open page</a>
+                <a href="${cleanHref(card.href)}" class="resource-card__link">Open page</a>
               </article>
             `,
           )

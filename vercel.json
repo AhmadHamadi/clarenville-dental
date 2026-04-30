@@ -1,7 +1,9 @@
 {
+  "cleanUrls": true,
+  "trailingSlash": false,
   "redirects": [
     { "source": "/pages/:slug.html", "destination": "/:slug", "permanent": false },
-    { "source": "/:slug.html", "destination": "/:slug", "permanent": false }
+    { "source": "/pages/:slug", "destination": "/:slug", "permanent": false }
   ],
   "rewrites": [
     { "source": "/", "destination": "/dental-site/index.html" },
