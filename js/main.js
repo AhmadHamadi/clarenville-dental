@@ -15,7 +15,6 @@ import { initFAQ }        from './faq.js';
 // ── Component map: placeholder-id → component file path ─────
 const COMPONENTS = {
   'c-navbar'   : 'components/navbar.html',
-  'c-hero'     : 'components/hero.html',
   'c-services' : 'components/services.html',
   'c-reviews'  : 'components/reviews.html',
   'c-footer'   : 'components/footer.html',
