@@ -3980,6 +3980,36 @@
   object-fit: cover;
 }
 /* Team card used on about-us */
+.team-role-groups {
+  display: grid;
+  gap: 2rem;
+}
+.team-role-group {
+  display: grid;
+  gap: 1rem;
+}
+.team-role-group__heading {
+  margin: 0;
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.team-role-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+.team-role-grid--pair {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: calc((100% - 1.5rem) * 2 / 3 + 0.5rem);
+}
+.team-role-grid--single {
+  grid-template-columns: minmax(0, 1fr);
+  max-width: calc((100% - 3rem) / 3);
+}
 .team-member-card {
   display: flex;
   flex-direction: column;
@@ -4338,6 +4368,13 @@
   .faq-shell__content,
   .about-signal-strip {
     grid-template-columns: 1fr;
+  }
+
+  .team-role-grid,
+  .team-role-grid--pair,
+  .team-role-grid--single {
+    grid-template-columns: 1fr;
+    max-width: none;
   }
 
   .about-quick-actions__inner {
