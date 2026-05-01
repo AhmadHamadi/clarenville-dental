@@ -116,7 +116,7 @@ function _ensureSiteStructuredData() {
     name: "Clarenville Dental Care",
     url: "https://clarenvilledental.com/",
     image: "https://clarenvilledental.com/assets/images/logo.webp",
-    telephone: "+1-709-200-0209",
+    telephone: "+1-709-466-7001",
     email: "clarenville.dental@gmail.com",
     address: {
       "@type": "PostalAddress",
@@ -129,15 +129,15 @@ function _ensureSiteStructuredData() {
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        dayOfWeek: ["Monday", "Tuesday", "Thursday", "Friday"],
         opens: "08:00",
-        closes: "18:00",
+        closes: "17:00",
       },
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: "Saturday",
-        opens: "09:00",
-        closes: "15:00",
+        dayOfWeek: "Wednesday",
+        opens: "08:00",
+        closes: "20:00",
       },
     ],
     areaServed: [
@@ -464,8 +464,8 @@ function _buildMobileServicesMenuMarkup() {
 }
 
 function _ensurePhoneCtas() {
-  const phoneHref = "tel:+17092000209";
-  const phoneLabel = "(709) 200-0209";
+  const phoneHref = "tel:+17094667001";
+  const phoneLabel = "(709) 466-7001";
 
   document.querySelectorAll(".page-hero__actions").forEach((actions) => {
     const appointmentBtn = actions.querySelector('a[href*="appointment-request"]');

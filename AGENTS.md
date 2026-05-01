@@ -25,9 +25,9 @@
 |---|---|
 | Brand | Clarenville Dental Care |
 | Address | 259 Memorial Drive, Suite 201, Clarenville, NL A5A 1R4 |
-| Phone | (709) 200-0209 |
+| Phone | (709) 466-7001 |
 | Email | clarenville.dental@gmail.com |
-| Hours | Mon–Fri 8am–6pm, Sat 9am–3pm |
+| Hours | Mon, Tue, Thu, Fri 8am-5pm; Wed 8am-8pm; Sat-Sun closed |
 
 ## Before Any Edit
 

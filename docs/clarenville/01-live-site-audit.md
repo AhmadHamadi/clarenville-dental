@@ -6,7 +6,7 @@ Clarenville Dental has a real local entity footprint, but the public site underu
 ## Public Positioning Observed
 - Brand used publicly: `Clarenville Dental Care`
 - Address shown publicly: `259 Memorial Drive, Suite 201, Clarenville, NL A5A 1R4`
-- Phone shown publicly: `(709) 200-0209`
+- Phone shown publicly: `(709) 466-7001`
 - Search-visible email: `clarenville.dental@gmail.com`
 - Public support/navigation pages visible in user prompt and search snippets: home, contact, appointment request, services, meet the team
 - Publicly visible service themes: preventive dentistry, implant dentistry, dental aesthetics, Invisalign, wisdom teeth removal, emergency care

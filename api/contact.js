@@ -65,6 +65,6 @@ export default async function handler(req, res) {
     return res.status(200).json({ success: true });
   } catch (err) {
     console.error('Contact form error:', err);
-    return res.status(500).json({ error: 'Failed to send your message. Please call us directly at (709) 200-0209 or try again.' });
+    return res.status(500).json({ error: 'Failed to send your message. Please call us directly at (709) 466-7001 or try again.' });
   }
 }

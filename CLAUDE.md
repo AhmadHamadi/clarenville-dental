@@ -11,9 +11,9 @@
 |---|---|
 | Brand | Clarenville Dental Care |
 | Address | 259 Memorial Drive, Suite 201, Clarenville, NL A5A 1R4 |
-| Phone | (709) 200-0209 |
+| Phone | (709) 466-7001 |
 | Email | clarenville.dental@gmail.com |
-| Hours | Mon–Fri 8am–6pm, Sat 9am–3pm |
+| Hours | Mon, Tue, Thu, Fri 8am-5pm; Wed 8am-8pm; Sat-Sun closed |
 | Rating | 4.9 stars / 90+ reviews |
 | CDCP | Accepted |
 | New Patients | Yes |
@@ -394,7 +394,7 @@ Create `dental-site/pages/your-page.html` following this template:
         "postalCode": "A5A 1R4",
         "addressCountry": "CA"
       },
-      "telephone": "+17092000209"
+      "telephone": "+17094667001"
     },
     "areaServed": "Clarenville, NL"
   }
@@ -410,11 +410,11 @@ Create `dental-site/pages/your-page.html` following this template:
           <span>259 Memorial Dr, Clarenville, NL A5A 1R4</span>
         </div>
         <div class="topbar__right">
-          <a href="tel:+17092000209" class="topbar__link">(709) 200-0209</a>
+          <a href="tel:+17094667001" class="topbar__link">(709) 466-7001</a>
           <span class="topbar__sep" aria-hidden="true">|</span>
           <a href="mailto:clarenville.dental@gmail.com" class="topbar__link topbar__link--hide-sm">clarenville.dental@gmail.com</a>
           <span class="topbar__sep topbar__link--hide-sm" aria-hidden="true">|</span>
-          <span class="topbar__hours">Mon-Fri 8am-6pm | Sat 9am-3pm</span>
+          <span class="topbar__hours">Mon, Tue, Thu, Fri 8am-5pm | Wed 8am-8pm</span>
         </div>
       </div>
     </div>
@@ -471,7 +471,7 @@ Create `dental-site/pages/your-page.html` following this template:
             <h1 id="page-heading" class="section-heading">[Main heading]</h1>
             <p class="page-hero__lede">[Lede paragraph]</p>
             <div class="page-hero__actions">
-              <a href="tel:+17092000209" class="btn btn--primary">Call (709) 200-0209</a>
+              <a href="tel:+17094667001" class="btn btn--primary">Call (709) 466-7001</a>
               <a href="appointment-request.html" class="btn btn--ghost-white">Book Appointment</a>
             </div>
           </div>
@@ -509,7 +509,7 @@ Create `dental-site/pages/your-page.html` following this template:
 
   <!-- MOBILE CTA BAR -->
   <div class="mobile-cta">
-    <a href="tel:+17092000209" class="mobile-cta__btn mobile-cta__btn--phone">Call Clinic</a>
+    <a href="tel:+17094667001" class="mobile-cta__btn mobile-cta__btn--phone">Call Clinic</a>
     <a href="appointment-request.html" class="mobile-cta__btn mobile-cta__btn--book">Book Now</a>
   </div>
 
