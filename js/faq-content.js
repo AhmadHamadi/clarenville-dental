@@ -255,61 +255,6 @@ export const FAQ_CONTENT = {
       { question: "What is the best time to whiten — before or after other dental work?", answer: "Whitening is best done before major restorative or cosmetic work so that new crowns, veneers, or composite restorations can be matched to your whitened shade. If you already have visible restorations in the smile zone, discuss with the dentist how to approach the colour match." }
     ]
   },
-  "broken-tooth-repair-clarenville.html": {
-    sectionTitle: "Broken tooth FAQ",
-    sectionSubtitle: "Questions patients ask when they have chipped or broken a tooth and are deciding what to do next.",
-    items: [
-      { question: "What should I do immediately after breaking a tooth?", answer: "Rinse your mouth gently with warm water, apply a cold compress to the outside of the cheek if there is swelling, and call the clinic. If the break is sharp, painful, large, or involves significant pieces of tooth, treat it as urgent rather than waiting." },
-      { question: "Does every broken or chipped tooth need to be seen right away?", answer: "Not always. A small chip that is smooth, painless, and not near the nerve can often wait for a scheduled appointment. A break that is painful, exposes sensitive tooth structure, has sharp edges, or involves trauma to the area should be assessed the same day if possible." },
-      { question: "What treatment options exist for a broken tooth?", answer: "The right treatment depends on how much tooth structure is affected and whether the nerve is involved. Options include bonding or composite repair for minor chips, a crown for more significant structural damage, and root canal treatment followed by a crown if the nerve is exposed or infected." },
-      { question: "Can a broken tooth be repaired to look natural?", answer: "Yes. Tooth-coloured composite bonding and ceramic crowns are designed to match the shade and shape of surrounding teeth. Most repairs are not visible in normal conversation. Ask the dentist which option best fits both function and appearance for your specific tooth." },
-      { question: "How do I prevent further damage before getting to the clinic?", answer: "Avoid chewing on the affected side, do not probe the area with your tongue repeatedly, avoid very hot or cold food and drink if the tooth is sensitive, and cover a sharp edge temporarily with sugar-free gum or dental wax if you have any. These steps reduce the risk of the break worsening before it can be treated." }
-    ]
-  },
-  "cdcp-cleanings-clarenville.html": {
-    sectionTitle: "CDCP cleanings FAQ",
-    sectionSubtitle: "Questions patients in Clarenville ask about using CDCP coverage for dental cleanings.",
-    items: [
-      { question: "Are dental cleanings covered under the Canadian Dental Care Plan in Newfoundland?", answer: "Yes, dental cleanings are among the preventive services covered for eligible CDCP participants. Coverage limits and frequency rules apply, so confirming what your specific plan includes before booking is worthwhile." },
-      { question: "How do I use my CDCP coverage for a cleaning at this clinic?", answer: "Let the clinic know you have CDCP coverage when you book. The clinic will verify your eligibility and handle the billing directly with the program. You do not need to submit claims yourself." },
-      { question: "How often can I get a cleaning covered under the CDCP?", answer: "Frequency limits for covered cleanings vary based on age and risk level under the program. Most eligible adults can access at least one covered cleaning per year. Your hygienist may recommend more frequent visits depending on your oral health status, though additional appointments may not be fully covered." },
-      { question: "Does CDCP coverage vary by age or income?", answer: "Yes. CDCP benefit levels are tiered based on household income. Patients above certain income thresholds may have a co-payment. Children, seniors, and patients with disabilities may have different eligibility criteria. The clinic can help you understand what to expect based on your situation." },
-      { question: "What if my CDCP coverage does not fully cover the cleaning cost?", answer: "Any portion not covered by CDCP is the patient's responsibility. The clinic can provide an estimate before treatment so you know what to expect. If you have supplemental private insurance, it may cover part of the remaining balance." }
-    ]
-  },
-  "cdcp-root-canal-clarenville.html": {
-    sectionTitle: "CDCP root canal FAQ",
-    sectionSubtitle: "Questions patients ask when they need root canal treatment and want to understand how CDCP coverage applies.",
-    items: [
-      { question: "Does the Canadian Dental Care Plan cover root canal treatment?", answer: "Root canal treatment is included in the CDCP's list of covered services for eligible patients, though coverage depends on the tooth type, treatment complexity, and the patient's specific benefit tier. Front teeth are generally covered differently than back teeth." },
-      { question: "How do I confirm whether my root canal is covered before treatment?", answer: "The clinic can submit a predetermination request to the CDCP on your behalf before treatment begins. This gives you a written estimate of what will be covered and what your out-of-pocket responsibility will be." },
-      { question: "What should I do if I need a root canal but am unsure about my CDCP status?", answer: "Call the clinic and describe the pain or concern. If the situation is urgent, the clinic can often move forward quickly while sorting out coverage details in parallel. Do not delay care for a dental infection or severe pain while waiting to confirm insurance." },
-      { question: "Is there a waiting period for major treatments like root canals under CDCP?", answer: "CDCP does not have a general waiting period for newly enrolled patients, but specific treatment frequency limits and coverage rules apply. A predetermination can clarify what the program will pay before you commit to the treatment timeline." },
-      { question: "What if the root canal needs a crown afterward — is that also covered?", answer: "Crown coverage under CDCP depends on the tooth location and benefit tier. Front teeth crowns are more commonly covered than back teeth. A predetermination that includes both the root canal and the planned crown will give you a clearer picture of total expected costs." }
-    ]
-  },
-  "emergency-tooth-pain-clarenville.html": {
-    sectionTitle: "Emergency tooth pain FAQ",
-    sectionSubtitle: "Questions patients ask when they are dealing with sudden, severe, or worsening tooth pain.",
-    items: [
-      { question: "How do I know if tooth pain is serious enough to call the clinic today?", answer: "Call the same day if the pain is severe, getting worse, keeping you from eating or sleeping, paired with swelling, or if you can see visible changes like redness, drainage, or a broken tooth. Pain that has been mild but is suddenly intensifying also warrants a call rather than waiting." },
-      { question: "What can I do to manage tooth pain before I can get to the clinic?", answer: "Over-the-counter pain relief like ibuprofen or acetaminophen taken at the recommended dose helps reduce inflammation and discomfort. Avoid chewing on the affected side, stay away from very hot or cold food and drinks on a sensitive tooth, and keep upright rather than lying flat if there is swelling." },
-      { question: "What commonly causes sudden severe tooth pain?", answer: "Common causes include a deep cavity that has reached the nerve, a cracked tooth, an abscess or infection, an exposed root surface, a broken filling or crown, and in some cases referred pain from sinus pressure. Only an exam and X-rays can confirm the cause." },
-      { question: "Is swelling with tooth pain more serious than pain alone?", answer: "Generally yes. Swelling around a tooth, along the jaw, or in the face can indicate a spreading infection or abscess. Dental infections can spread quickly and should always be assessed the same day. If swelling is severe, spreading toward the throat, or affecting breathing, go to a hospital emergency room." },
-      { question: "Should I go to the hospital or a dentist for tooth pain?", answer: "For most tooth pain, a dentist is the right first call. A dentist can diagnose the cause, treat the tooth directly, and prescribe antibiotics if needed. Hospitals can manage pain and infection with medication but typically do not extract teeth or perform dental procedures. Call the clinic first unless swelling is spreading toward the throat or you cannot breathe normally." }
-    ]
-  },
-  "wisdom-teeth-pain-clarenville.html": {
-    sectionTitle: "Wisdom teeth pain FAQ",
-    sectionSubtitle: "Questions people ask when they are dealing with wisdom tooth symptoms and trying to decide what to do next.",
-    items: [
-      { question: "How do I know if my wisdom tooth pain needs attention soon?", answer: "Mild achiness during eruption can be normal and temporary. Pain that is worsening, returning repeatedly, paired with swelling or a bad taste, or making it hard to open your mouth fully is not something to keep waiting on. Call the clinic if the pattern sounds more like repeated infection than a short-term eruption phase." },
-      { question: "What is pericoronitis and why does it keep coming back?", answer: "Pericoronitis is an infection of the gum tissue partially covering a wisdom tooth. It happens when bacteria get trapped under the flap of gum and cause inflammation. It can be managed short-term with antibiotics, but often returns because the underlying cause — the partially erupted tooth — remains in place. Removal is the most reliable long-term solution." },
-      { question: "Can wisdom tooth pain go away on its own?", answer: "Some wisdom tooth discomfort during active eruption can settle down if the tooth has room to come in properly. Pain from an infection, impaction, or repeated flare-ups rarely resolves without treatment. If the same area has been painful more than once, it is worth getting it assessed rather than hoping it resolves." },
-      { question: "Does wisdom tooth pain mean the tooth definitely needs to come out?", answer: "Not necessarily. Some wisdom teeth that cause temporary discomfort during eruption can eventually settle if they are coming in straight and there is room. An X-ray is the only accurate way to determine whether the position and anatomy of the tooth are likely to cause ongoing problems. Some patients monitor with regular X-rays; others opt for early removal to avoid future flare-ups." },
-      { question: "Should I go to an emergency dentist for wisdom tooth pain?", answer: "If the pain is severe, swelling is visible, opening your mouth is restricted, or you have a fever alongside the dental discomfort, that warrants same-day or next-day contact with the clinic. Wisdom tooth infections can spread and should not wait more than a day or two when those signs are present. For milder discomfort without swelling, a scheduled assessment is typically appropriate." }
-    ]
-  },
   "wisdom-teeth-removal.html": {
     sectionTitle: "Wisdom teeth removal FAQ",
     sectionSubtitle: "Questions patients ask when they are dealing with wisdom tooth pain or deciding whether removal is the right step.",

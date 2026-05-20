@@ -17,7 +17,7 @@ PAGES = {
 "s2_img": "background2.avif", "s2_alt": "Urgent dental visit in Clarenville",
 "band_heading": "Pain that keeps you up at night is not something to wait out until Monday.",
 "band_body": "Dental infections can spread. A tooth that could have been saved becomes harder to treat with every day of delay. If something feels wrong, call us — we set aside time for urgent patients every day.",
-"related": [("emergency-tooth-pain-clarenville.html","Tooth Pain"), ("broken-tooth-repair-clarenville.html","Broken Tooth"), ("root-canal-treatment.html","Root Canal"), ("contact.html","Call the Clinic"), ("appointment-request.html","Book Appointment")],
+"related": [("blog-tooth-pain-clarenville.html","When Tooth Pain Is an Emergency"), ("root-canal-treatment.html","Root Canal"), ("tooth-extractions.html","Tooth Extractions"), ("contact.html","Call the Clinic"), ("appointment-request.html","Book Appointment")],
 },
 "family-dentistry.html": {
 "s1_label": "For Every Age",
@@ -113,7 +113,7 @@ PAGES = {
 "s2_img": "background3.jpg", "s2_alt": "Endodontic treatment at Clarenville Dental Care",
 "band_heading": "Saving a natural tooth is almost always better than replacing it.",
 "band_body": "A treated and restored tooth can last a lifetime with proper care. Root canal treatment is one of the most effective ways to eliminate pain, clear infection, and keep the tooth in place — avoiding the cost and complexity of extraction and replacement.",
-"related": [("emergency-dentist.html","Emergency Dentist"), ("dental-crowns-and-bridges.html","Crowns and Bridges"), ("cdcp-root-canal-clarenville.html","CDCP and Root Canal"), ("appointment-request.html","Book Appointment")],
+"related": [("emergency-dentist.html","Emergency Dentist"), ("dental-crowns-and-bridges.html","Crowns and Bridges"), ("blog-tooth-pain-clarenville.html","When Tooth Pain Is an Emergency"), ("appointment-request.html","Book Appointment")],
 },
 "wisdom-teeth-removal.html": {
 "s1_label": "Assessment and Removal",
@@ -129,7 +129,7 @@ PAGES = {
 "s2_img": "background1.jpg", "s2_alt": "Post-wisdom tooth removal recovery",
 "band_heading": "Earlier assessment leads to simpler treatment — almost without exception.",
 "band_body": "Wisdom teeth removed in the late teens or early twenties typically involve shorter procedures and faster recovery than when removal is delayed until problems become severe. If you have been experiencing back-tooth pain or recurring swelling, it is worth getting checked.",
-"related": [("emergency-dentist.html","Emergency Dentist"), ("wisdom-teeth-pain-clarenville.html","Wisdom Teeth Pain"), ("appointment-request.html","Book Appointment"), ("faq.html","Patient FAQ")],
+"related": [("emergency-dentist.html","Emergency Dentist"), ("blog-wisdom-teeth-clarenville.html","Wisdom Teeth: When to Get an Assessment"), ("tooth-extractions.html","Tooth Extractions"), ("appointment-request.html","Book Appointment"), ("faq.html","Patient FAQ")],
 },
 "dental-crowns-and-bridges.html": {
 "s1_label": "Restoring Damaged Teeth",

@@ -172,10 +172,9 @@ const PAGE_CONFIG = {
       },
     ],
     links: [
-      { href: "cdcp-cleanings-clarenville.html", label: "CDCP Cleanings Guide" },
-      { href: "cdcp-root-canal-clarenville.html", label: "CDCP and Root Canal Guide" },
       { href: "dental-insurance-clarenville.html", label: "Insurance Information" },
       { href: "dental-cleanings.html", label: "Dental Cleanings" },
+      { href: "blog-cdcp-coverage-2026.html", label: "What CDCP Covers in 2026" },
       { href: "contact.html", label: "Request Appointment" },
     ],
   },
@@ -219,7 +218,7 @@ const PAGE_CONFIG = {
     links: [
       { href: "preventive-dentistry.html", label: "Preventive Dentistry" },
       { href: "family-dentistry.html", label: "Family Dentistry" },
-      { href: "cdcp-cleanings-clarenville.html", label: "CDCP Cleanings Guide" },
+      { href: "dental-insurance-clarenville.html", label: "Insurance & CDCP" },
       { href: "contact.html", label: "Request Appointment" },
     ],
   },
@@ -327,9 +326,9 @@ const PAGE_CONFIG = {
       },
     ],
     links: [
-      { href: "emergency-tooth-pain-clarenville.html", label: "Tooth Pain Guide" },
-      { href: "broken-tooth-repair-clarenville.html", label: "Broken Tooth Guide" },
+      { href: "blog-tooth-pain-clarenville.html", label: "When Tooth Pain Is an Emergency" },
       { href: "root-canal-treatment.html", label: "Root Canal Treatment" },
+      { href: "tooth-extractions.html", label: "Tooth Extractions" },
       { href: "contact.html", label: "Call the Clinic" },
       { href: "contact.html", label: "Request Emergency Visit" },
     ],
@@ -417,9 +416,8 @@ const PAGE_CONFIG = {
     ],
     links: [
       { href: "emergency-dentist.html", label: "Emergency Dentist" },
-      { href: "cdcp-root-canal-clarenville.html", label: "CDCP and Root Canal Guide" },
       { href: "dental-crowns-and-bridges.html", label: "Crowns and Bridges" },
-      { href: "emergency-tooth-pain-clarenville.html", label: "Tooth Pain Guide" },
+      { href: "blog-tooth-pain-clarenville.html", label: "When Tooth Pain Is an Emergency" },
       { href: "contact.html", label: "Book an Evaluation" },
     ],
   },
@@ -483,9 +481,9 @@ const PAGE_CONFIG = {
       },
     ],
     links: [
-      { href: "wisdom-teeth-pain-clarenville.html", label: "Wisdom Teeth Pain Guide" },
+      { href: "blog-wisdom-teeth-clarenville.html", label: "Wisdom Teeth: When to Get an Assessment" },
       { href: "emergency-dentist.html", label: "Emergency Dentist" },
-      { href: "contact.html", label: "Call the Clinic" },
+      { href: "tooth-extractions.html", label: "Tooth Extractions" },
       { href: "contact.html", label: "Request Appointment" },
     ],
   },
@@ -830,11 +828,8 @@ function buildPathwayCopy(config, context) {
 }
 
 const PAGE_TEMPLATE_FAMILIES = {
-  "broken-tooth-repair-clarenville.html": "emergency",
   "blog.html": "editorial",
-  "cdcp-cleanings-clarenville.html": "support",
   "cdcp-dentist-clarenville.html": "support",
-  "cdcp-root-canal-clarenville.html": "support",
   "cosmetic-dentistry.html": "cosmetic",
   "dental-cleanings.html": "preventive",
   "dental-crowns-and-bridges.html": "restorative",
@@ -843,7 +838,6 @@ const PAGE_TEMPLATE_FAMILIES = {
   "dental-technology.html": "support",
   "dentures.html": "restorative",
   "emergency-dentist.html": "emergency",
-  "emergency-tooth-pain-clarenville.html": "emergency",
   "family-dentistry.html": "preventive",
     "faq.html": "faq-hub",
     "invisalign.html": "cosmetic",
@@ -852,7 +846,6 @@ const PAGE_TEMPLATE_FAMILIES = {
   "root-canal-treatment.html": "emergency",
   "teeth-whitening.html": "cosmetic",
   "tooth-colored-fillings.html": "restorative",
-  "wisdom-teeth-pain-clarenville.html": "emergency",
   "wisdom-teeth-removal.html": "emergency",
 };
 

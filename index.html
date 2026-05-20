@@ -20,36 +20,48 @@
   <meta name="twitter:image" content="https://clarenvilledental.com/assets/images/homepage-hero.jpg" />
   
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Dentist",
-      "name": "Clarenville Dental Care",
-      "url": "https://clarenvilledental.com/",
-      "telephone": "+17094667001",
-      "email": "clarenville.dental@gmail.com",
-      "image": "https://clarenvilledental.com/assets/images/logo.webp",
-      "priceRange": "$$",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "259 Memorial Drive, Suite 201",
-        "addressLocality": "Clarenville",
-        "addressRegion": "NL",
-        "postalCode": "A5A 1R4",
-        "addressCountry": "CA"
-      },
-      "areaServed": [
-        "Clarenville",
-        "Shoal Harbour",
-        "Milton",
-        "Georges Brook",
-        "Deep Bight",
-        "Port Blandford",
-        "Swift Current",
-        "Arnold's Cove",
-        "Sunnyside"
-      ],
-      "openingHoursSpecification": [
-        {
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "@id": "https://clarenvilledental.com/#dentist",
+    "name": "Clarenville Dental Care",
+    "url": "https://clarenvilledental.com/",
+    "telephone": "+17094667001",
+    "email": "clarenville.dental@gmail.com",
+    "image": "https://clarenvilledental.com/assets/images/logo.webp",
+    "logo": "https://clarenvilledental.com/assets/images/logo.webp",
+    "priceRange": "$$",
+    "currenciesAccepted": "CAD",
+    "paymentAccepted": "Cash, Credit Card, Debit, CDCP, Private Insurance",
+    "medicalSpecialty": [
+      "Dentistry",
+      "Cosmetic Dentistry",
+      "Restorative Dentistry",
+      "Emergency Dentistry",
+      "Pediatric Dentistry",
+      "Preventive Dentistry"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "259 Memorial Drive, Suite 201",
+      "addressLocality": "Clarenville",
+      "addressRegion": "NL",
+      "postalCode": "A5A 1R4",
+      "addressCountry": "CA"
+    },
+    "areaServed": [
+      "Clarenville",
+      "Shoal Harbour",
+      "Milton",
+      "Georges Brook",
+      "Deep Bight",
+      "Port Blandford",
+      "Swift Current",
+      "Arnold's Cove",
+      "Sunnyside"
+    ],
+    "openingHoursSpecification": [
+      {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Monday", "Tuesday", "Thursday", "Friday"],
         "opens": "08:00",
@@ -61,8 +73,44 @@
         "opens": "08:00",
         "closes": "20:00"
       }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "90",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Dental Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Emergency Dentistry", "url": "https://clarenvilledental.com/emergency-dentist" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Family Dentistry", "url": "https://clarenvilledental.com/family-dentistry" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dental Cleanings", "url": "https://clarenvilledental.com/dental-cleanings" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dental Implants", "url": "https://clarenvilledental.com/dental-implants" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Invisalign", "url": "https://clarenvilledental.com/invisalign" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Root Canal Treatment", "url": "https://clarenvilledental.com/root-canal-treatment" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wisdom Teeth Removal", "url": "https://clarenvilledental.com/wisdom-teeth-removal" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cosmetic Dentistry", "url": "https://clarenvilledental.com/cosmetic-dentistry" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dental Crowns and Bridges", "url": "https://clarenvilledental.com/dental-crowns-and-bridges" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dentures", "url": "https://clarenvilledental.com/dentures" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Teeth Whitening", "url": "https://clarenvilledental.com/teeth-whitening" } }
       ]
     }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://clarenvilledental.com/#website",
+    "url": "https://clarenvilledental.com/",
+    "name": "Clarenville Dental Care",
+    "description": "Family, emergency, and cosmetic dentist in Clarenville, NL. CDCP accepted. New patients welcome.",
+    "publisher": { "@id": "https://clarenvilledental.com/#dentist" },
+    "inLanguage": "en-CA"
+  }
   </script>
 
   <!-- Preconnect for performance -->
