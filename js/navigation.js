@@ -468,7 +468,7 @@ function _ensurePhoneCtas() {
   const phoneLabel = "(709) 466-7001";
 
   document.querySelectorAll(".page-hero__actions").forEach((actions) => {
-    const appointmentBtn = actions.querySelector('a[href*="appointment-request"]');
+    const appointmentBtn = actions.querySelector('a[href*="appointment-request"], a[href$="/contact"], a[href$="contact.html"]');
     if (!appointmentBtn) return;
 
     const existingPhoneBtn = actions.querySelector(`a[href="${phoneHref}"]`);
