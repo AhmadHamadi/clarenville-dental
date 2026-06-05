@@ -207,6 +207,16 @@
           <form id="book-form" novalidate aria-labelledby="form-heading">
             <h2 id="form-heading" class="section-heading form-heading--sm">Request an Appointment</h2>
 
+            <!-- Spam protection: honeypot fields (hidden from real visitors, only
+                 bots fill them) + a timestamp stamped on load by JS. Do not remove. -->
+            <div aria-hidden="true" style="position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;overflow:hidden;" tabindex="-1">
+              <label for="website">Website</label>
+              <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" tabindex="-1" autocomplete="off" />
+            </div>
+            <input type="hidden" id="form-loaded-at" name="form_loaded_at" value="" />
+
             <div id="form-success" role="alert" style="display:none;background:#f0fdf4;border:1px solid #86efac;border-radius:0.75rem;padding:1.25rem 1.5rem;margin-bottom:1.5rem;">
               <p style="margin:0;font-weight:600;color:#166534;">Request sent — thank you!</p>
               <p style="margin:0.25rem 0 0;color:#166534;font-size:0.9rem;">We will call you within 1 business hour to confirm. For emergencies call <a href="tel:+17094667001" style="color:inherit;">(709) 466-7001</a>.</p>
@@ -399,6 +409,11 @@
     document.addEventListener('DOMContentLoaded', () => {
       initNavigation();
       initFAQ();
+
+      // Spam protection: record when the form became available so the server can
+      // reject submissions that arrive implausibly fast (bots submit instantly).
+      const loadedAtField = document.getElementById('form-loaded-at');
+      if (loadedAtField) loadedAtField.value = String(Date.now());
 
       const form = document.getElementById('book-form');
       const submitBtn = document.getElementById('form-submit-btn');
